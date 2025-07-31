@@ -21,6 +21,6 @@ Escuela de invierno ELSOC, 01 de agosto de 2025
 
 Laboratorio de Investigación Social Abierta - COES
 
-
+{{< include modulo1.qmd >}}
 
 {{< include modulo2.qmd >}}

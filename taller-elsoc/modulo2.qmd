@@ -23,22 +23,10 @@ Escuela de invierno ELSOC, 01 de agosto de 2025
 Laboratorio de Investigación Social Abierta - COES
 
 
-# Contenidos
 
-:::{.incremental .highlight-last style="font-size: 35px"}
-- Secciones de la hoja (YAML, slides)
-  
-- Generación de slides
+{{< include m2-p1.qmd >}}
 
-- Orden de la información 
+{{< include m2-p2.qmd >}}
 
-- Diseño de la presentación 
-:::
 
-# Slides
 
-## Títulos
-
-### Subtítulos
-
-#### Hasta 4 #

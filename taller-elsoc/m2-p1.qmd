@@ -1,0 +1,15 @@
+---
+format:
+  revealjs:
+    theme: 
+           - taller-elsoc.scss 
+    transition: slide
+    transition-speed: slow
+editor: source  
+---
+
+
+# Parte 1: Documentos en Quarto
+
+## Contenidos
+
