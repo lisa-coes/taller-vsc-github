@@ -8,16 +8,19 @@ format:
 editor: source  
 ---
 
-#
- 
-### Uso de VSCode y presentaciones en Quarto: Módulo 2 
+# {background-color="black" .white}
 
-Juan Carlos Castillo y Tomás Urzúa 
+### Módulo 2: Documentos y presentaciones en Quarto 
+
+Tomás Urzúa & Juan Carlos Castillo  
 
 Escuela de invierno ELSOC, 01 de agosto de 2025
 
-![](images/lisa.png){width="40%"}
+<hr>
 
+![](images/lisa.png){width="80%"}
+
+Laboratorio de Investigación Social Abierta - COES
 
 
 # Contenidos

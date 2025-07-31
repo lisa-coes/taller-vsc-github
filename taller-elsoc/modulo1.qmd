@@ -1,0 +1,35 @@
+---
+format:
+  revealjs:
+    theme: 
+           - taller-elsoc.scss 
+    transition: slide
+    transition-speed: slow
+editor: source  
+---
+
+# {background-color="black" .white}
+
+### Módulo 1: Github y VSCode
+
+Kevin Carrasco & Ismael Aguayo  
+
+Escuela de invierno ELSOC, 01 de agosto de 2025
+
+<hr>
+
+![](images/lisa.png){width="80%"}
+
+Laboratorio de Investigación Social Abierta - COES
+
+
+# Contenidos Módulo 1
+
+:::{.incremental .highlight-last style="font-size: 35px"}
+
+1. Contenido 1
+2. Contenido 2 ...
+
+:::
+
+
