@@ -1,0 +1,41 @@
+---
+format:
+  revealjs:
+    theme: 
+           - taller-elsoc.scss 
+    transition: slide
+    transition-speed: slow
+editor: source  
+---
+
+#
+ 
+### Uso de VSCode y presentaciones en Quarto: Módulo 2 
+
+Juan Carlos Castillo y Tomás Urzúa 
+
+Escuela de invierno ELSOC, 01 de agosto de 2025
+
+![](images/lisa.png){width="40%"}
+
+
+
+# Contenidos
+
+:::{.incremental .highlight-last style="font-size: 35px"}
+- Secciones de la hoja (YAML, slides)
+  
+- Generación de slides
+
+- Orden de la información 
+
+- Diseño de la presentación 
+:::
+
+# Slides
+
+## Títulos
+
+### Subtítulos
+
+#### Hasta 4 #
