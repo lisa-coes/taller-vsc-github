@@ -41,7 +41,7 @@ editor: source
 
 ---
 
-## Instalación
+## Instalación en VSC
 
 :::: {.columns}
 ::: {.column width="60%"}
