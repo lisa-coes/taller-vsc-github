@@ -326,13 +326,13 @@
 
 
 <section>
-<section id="parte-2-presentaciones" class="title-slide slide level1 center">
-<h1>Parte 2: Presentaciones</h1>
+<section id="parte-2-presentaciones-en-quarto" class="title-slide slide level1 center">
+<h1>Parte 2: Presentaciones en Quarto</h1>
 
 </section>
 <section id="contenidos" class="slide level2">
 <h2>Contenidos</h2>
-<div class="highlight-last" style="font-size: 35px">
+<div class="highlight-last" style="font-size: 45px">
 <ul>
 <li class="fragment"><p>Secciones de la hoja (YAML, slides)</p></li>
 <li class="fragment"><p>Generación de slides</p></li>
@@ -340,22 +340,145 @@
 <li class="fragment"><p>Diseño de la presentación</p></li>
 </ul>
 </div>
+</section>
+<section id="yaml" class="slide level2">
+<h2>YAML</h2>
+<ul>
+<li><p>Contiene las características que tendrá la presentación al momento de ser renderizada</p></li>
+<li><p>Las especificaciones afectarán todo el documento</p></li>
+<li><p>Veamos un ejemplo con el YAML de esta presentación</p></li>
+</ul>
+<aside class="notes">
+<p>Sacar la transición y renderizar la presentación sin ella</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="slides" class="slide level2">
+<h2>Slides</h2>
+<ul>
+<li><p>Cada slide se define a partir de un ‘#’</p></li>
+<li><p>Se pueden generar subtítulos dentro de una slide añadiendo ‘#’ antes de un texto</p></li>
+</ul>
 </section></section>
 <section>
-<section id="slides" class="title-slide slide level1 center">
-<h1>Slides</h1>
+<section id="slide-con-un" class="title-slide slide level1 center">
+<h1>Slide con un ‘#’</h1>
 
 </section>
-<section id="títulos" class="slide level2">
-<h2>Títulos</h2>
-<h3 id="subtítulos">Subtítulos</h3>
-<h4 id="hasta-4">Hasta 4</h4>
+<section id="subtítulo-con-2" class="slide level2">
+<h2>Subtítulo con 2 ‘#’</h2>
+<h3 id="subtítulo-con-3">Subtítulo con 3 ‘#’</h3>
+<h4 id="subtítulo-con-4">Subtítulo con 4 ‘#’</h4>
+<p>Texto sin ‘#’</p>
+</section>
+<section id="orden-de-la-información" class="slide level2">
+<h2>Orden de la información</h2>
+<ul>
+<li><p>La información puede ser presentada de distintas maneras</p></li>
+<li><p>Puede verse todo el texto de inmediato</p></li>
+<li><p>Todo a un mismo lado</p></li>
+<li><p>Y sin ninguna variante</p></li>
+</ul>
+</section>
+<section id="orden-de-la-presentación" class="slide level2">
+<h2>Orden de la presentación</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li class="fragment"><p><strong>La información puede ser presentada de distintas maneras</strong></p></li>
+<li class="fragment"><p>Puede verse secuencialmente</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li class="fragment"><p>Separando el texto en columnas</p></li>
+<li class="fragment"><p><em>Y variando el estilo</em></p></li>
+</ul>
+</div></div>
+</section>
+<section id="orden-de-la-presentación-1" class="slide level2">
+<h2>Orden de la presentación</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">1</a></li><li><a href="#tabset-1-2">2</a></li><li><a href="#tabset-1-3">3</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<ul>
+<li>La información puede ser presentada de distintas maneras</li>
+</ul>
+</div>
+<div id="tabset-1-2">
+<ul>
+<li>Puede ser separada en casillas</li>
+</ul>
+</div>
+<div id="tabset-1-3">
+<ul>
+<li>Idealmente para comparar</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="diseño-de-la-presentación" class="slide level2">
+<h2>Diseño de la presentación</h2>
+<ul>
+<li><p>Las presentaciones (y todos los documentos .qmd) son <strong>completamente personalizables</strong></p></li>
+<li><p>Se pueden realizar cambios en <strong>partes específicas</strong> de la presentación así como a <strong>nivel global</strong></p></li>
+</ul>
+<aside class="notes">
+<p>Cambiar el color de las letras de una slide, del background y por último jugar con el tema y scss {style=“color: #212529;”} {data-background-color=“#212529”}</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="conclusiones" class="slide level2">
+<h2>Conclusiones</h2>
+<div style="font-size: 35px">
+<ul>
+<li class="fragment"><p>Quarto es ideal para generar documentos divulgativos, sobre todo aquellos que mezclan <strong>texto y código</strong></p></li>
+<li class="fragment"><p>Los documentos son <strong>completamente personalizables</strong></p></li>
+<li class="fragment"><p>Es una <strong>plataforma libre</strong>, por lo que no es necesario pagar licencias ni piratear softwares</p></li>
+<li class="fragment"><p>El conocimiento se vuelve <strong>más accesible y transparente</strong></p></li>
+</ul>
+</div>
+</section>
+<section id="recursos-para-seguir-aprendiendo" class="slide level2">
+<h2>Recursos para seguir aprendiendo</h2>
+<ul>
+<li><p><a href="https://quarto.org/docs/presentations/">Presentaciones Quarto</a> y más documentación</p></li>
+<li><p><a href="https://www.youtube.com/watch?v=EbAAmrB0luA">Videos explicativos</a> esenciales para aprender viendo</p></li>
+<li><p><a href="https://forum.posit.co/">Foro de Posit</a> para mantenerse actualizado y resolver dudas</p></li>
+<li><p><a href="https://lisa-coes.netlify.app/">Página LISA</a> y más sobre Ciencia Abierta</p></li>
+</ul>
+</section>
+<section id="repositorio" class="slide level2">
+<h2>Repositorio</h2>
+<p><a href="https://github.com/lisa-coes/taller-vsc-github">https://github.com/lisa-coes/taller-vsc-github</a></p>
+</section></section>
+<section id="gracias" class="title-slide slide level1 center">
+<h1>Gracias!</h1>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
