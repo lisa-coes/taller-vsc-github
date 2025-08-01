@@ -22,6 +22,17 @@ Escuela de invierno ELSOC, 01 de agosto de 2025
 
 Laboratorio de Investigación Social Abierta - COES
 
+# {background-color="black" .white}
+
+## Antes de comenzar
+
+- [Instalar Visual Studio Code](https://code.visualstudio.com/)
+
+- [Instalar Git](https://git-scm.com/downloads)
+
+- [Crear cuenta en github.com](https://github.com/)
+
+- Dejar su nombre de usuario de Github en el chat
 
 # Contenidos Módulo 1
 
@@ -321,3 +332,4 @@ B. *Protocolo* reproducible
   - no para cambios menores
   
   - no esperar muchos cambios distintos que puedan hacer perder el sentido del commit
+
