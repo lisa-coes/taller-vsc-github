@@ -11,5 +11,175 @@ editor: source
 
 # Parte 1: Documentos en Quarto
 
+
 ## Contenidos
 
+
+
+## Bienvenida e introducción
+
+:::: {.columns}
+::: {.column width="60%"}
+- Objetivo del taller
+- ¿Qué es Quarto?
+- ¿Por qué usar Quarto?
+- Diferencias con R Markdown
+- Usos comunes: docencia, investigación, reportes
+:::
+
+::: {.column width="40%"}
+![](images/quarto-logo.png){width="50%"}
+:::
+::::
+
+
+
+
+---
+
+## Instalación y configuración
+
+:::: {.columns}
+::: {.column width="60%"}
+- Requisitos: Quarto CLI y Visual Studio Code (VSC)
+- Instalación de Quarto: `https://quarto.org/docs/get-started/`
+- Verificación de instalación:
+  ```bash
+  quarto check
+  ```
+- Extensión "Quarto" para Visual Studio Code
+:::
+
+
+::: {.column width="40%"}
+![](images/vscode-extension.png){width="50%" style="display:block; margin-left:auto; margin-right:0;"}
+:::
+::::
+
+---
+
+## Bases de Markdown
+
+:::: {.columns}
+::: {.column width="60%"}
+- Encabezados: `#`, `##`, `###`
+- Listas:
+  - Viñetas: `-` o `*`
+  - Numeradas: `1.`, `2.`
+- Énfasis: `*cursiva*`, `**negrita**`
+- Citas: `> cita`
+- Código en línea: `` `código` ``
+- Enlaces: `[texto](url)`
+:::
+
+::: {.column width="40%"}
+![](images/markdown-syntax.png)
+:::
+::::
+
+---
+
+## Estructura básica de un documento
+
+- Archivo `.qmd`
+- Encabezado YAML:
+  ```yaml
+  title: "Mi documento"
+  author: "Juan Castillo"
+  date: today
+  format: html
+  ```
+- Markdown para secciones, énfasis, listas, etc.
+
+---
+
+## Citas y referencias
+
+- Bibliografía: archivo `.bib`
+- Estilo: archivo `.csl`
+- Ejemplo en YAML:
+  ```yaml
+  bibliography: referencias.bib
+  csl: apa.csl
+  ```
+- En el texto: `@autor2023`
+
+## Otros elementos visuales
+
+- Alertas:
+
+`::: {.callout-warning}
+Recuerda guardar tu archivo `.qmd` antes de renderizar.
+:::`
+
+
+
+::: {.callout-warning}
+Recuerda guardar tu archivo `.qmd` antes de renderizar.
+:::
+
+- Notas al pie de texto[^1]
+
+[^1]: Esta es una nota.
+
+
+
+---
+
+## Personalización visual del HTML
+
+- Temas: `cosmo`, `flatly`, `lux`, etc.
+- Opciones comunes en YAML:
+  ```yaml
+  toc: true
+  number-sections: true
+  code-fold: true
+  ```
+- Personalización con CSS externo:
+  ```yaml
+  css: estilos.css
+  ```
+
+---
+
+## Ejercicio práctico guiado
+
+1. Crear documento `.qmd`
+2. Agregar título, secciones, texto y código
+3. Insertar un gráfico y una tabla (ver sección siguiente)
+4. Agregar una referencia
+5. Aplicar un tema y opciones visuales
+
+---
+
+## Integración con R (opcional)
+
+- Quarto permite ejecutar código en R y Python
+- Requiere tener R instalado en el sistema
+- Posit/RStudio también permite trabajar con Quarto
+- Ejecución de scripts reproducibles y análisis dinámicos
+
+## Inclusión de código en R
+
+(pendiente)
+
+## Figuras y gráficos
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
+```
+
+## Tablas
+```{r}
+knitr::kable(head(mtcars))
+```
+
+---
+
+## Preguntas y cierre
+
+- Resolución de dudas
+- Recursos para seguir aprendiendo:
+  - [https://quarto.org](https://quarto.org)
+  - [https://r4ds.hadley.nz](https://r4ds.hadley.nz)
+  - [https://posit.cloud](https://posit.cloud)
