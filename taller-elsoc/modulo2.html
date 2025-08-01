@@ -429,8 +429,8 @@
 <li><p><strong>Extensible</strong></p></li>
 </ul>
 </section>
-<section id="instalación" class="slide level2">
-<h2>Instalación</h2>
+<section id="instalación-en-vsc" class="slide level2">
+<h2>Instalación en VSC</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
@@ -615,16 +615,14 @@
 <h1>Parte 2: Presentaciones en Quarto</h1>
 
 </section>
-<section id="contenidos" class="slide level2">
-<h2>Contenidos</h2>
-<div class="highlight-last" style="font-size: 45px">
+<section id="por-qué-usar-quarto-para-presentaciones" class="slide level2">
+<h2>¿Por qué usar Quarto para presentaciones?</h2>
 <ul>
-<li class="fragment"><p>Secciones de la hoja (YAML, slides)</p></li>
-<li class="fragment"><p>Generación de slides</p></li>
-<li class="fragment"><p>Orden de la información</p></li>
-<li class="fragment"><p>Diseño de la presentación</p></li>
+<li><p>Permite controlar las versiones (Git)</p></li>
+<li><p>Facilita la difusión (GitHub Pages)</p></li>
+<li><p>Utiliza texto plano y todos los recursos de Quarto</p></li>
+<li><p>Permite combinar texto y código</p></li>
 </ul>
-</div>
 </section>
 <section id="yaml" class="slide level2">
 <h2>YAML</h2>
@@ -633,6 +631,18 @@
 <li><p>Las especificaciones afectarán todo el documento</p></li>
 <li><p>Veamos un ejemplo con el YAML de esta presentación</p></li>
 </ul>
+</section>
+<section id="ejemplo-3" class="slide level2">
+<h2>Ejemplo</h2>
+<div class="sourceCode" id="annotated-cell-4"><pre class="sourceCode numberSource code-annotation-code number-lines code-with-copy"><code class="sourceCode"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1"></a>---</span>
+<span id="annotated-cell-4-2"><a href="#annotated-cell-4-2"></a>format:</span>
+<span id="annotated-cell-4-3"><a href="#annotated-cell-4-3"></a>  revealjs:</span>
+<span id="annotated-cell-4-4"><a href="#annotated-cell-4-4"></a>    theme: </span>
+<span id="annotated-cell-4-5"><a href="#annotated-cell-4-5"></a>          - taller-elsoc.scss </span>
+<span id="annotated-cell-4-6"><a href="#annotated-cell-4-6"></a>    transition: slide</span>
+<span id="annotated-cell-4-7"><a href="#annotated-cell-4-7"></a>    transition-speed: slow</span>
+<span id="annotated-cell-4-8"><a href="#annotated-cell-4-8"></a>editor: source</span>
+<span id="annotated-cell-4-9"><a href="#annotated-cell-4-9"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
 <p>Sacar la transición y renderizar la presentación sin ella</p>
 <style type="text/css">
@@ -719,7 +729,7 @@
 <li><p>Se pueden realizar cambios en <strong>partes específicas</strong> de la presentación así como a <strong>nivel global</strong></p></li>
 </ul>
 <aside class="notes">
-<p>Cambiar el color de las letras de una slide, del background y por último jugar con el tema y scss {style=“color: #212529;”} {data-background-color=“#212529”}</p>
+<p>Cambiar el color de las letras de una slide, del background y por último jugar con el tema y scss {style=“color: #212529;”} {data-background-color=“#212529”} {.incremental .highlight-last style=“font-size: 45px”}</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -732,8 +742,8 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="conclusiones" class="slide level2">
-<h2>Conclusiones</h2>
+<section id="palabras-de-cierre" class="slide level2">
+<h2>Palabras de cierre</h2>
 <div style="font-size: 35px">
 <ul>
 <li class="fragment"><p>Quarto es ideal para generar documentos divulgativos, sobre todo aquellos que mezclan <strong>texto y código</strong></p></li>
@@ -756,8 +766,8 @@
 <h2>Repositorio</h2>
 <p><a href="https://github.com/lisa-coes/taller-vsc-github">https://github.com/lisa-coes/taller-vsc-github</a></p>
 </section></section>
-<section id="gracias" class="title-slide slide level1 center">
-<h1>Gracias!</h1>
+<section id="muchas-gracias" class="title-slide slide level1 center">
+<h1>Muchas gracias!</h1>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
