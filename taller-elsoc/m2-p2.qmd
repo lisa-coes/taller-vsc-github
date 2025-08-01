@@ -11,17 +11,15 @@ editor: source
 
 # Parte 2: Presentaciones en Quarto 
 
-## Contenidos
+## ¿Por qué usar Quarto para presentaciones?
 
-:::{.incremental .highlight-last style="font-size: 45px"}
-- Secciones de la hoja (YAML, slides)
+- Permite controlar las versiones (Git)
   
-- Generación de slides
+- Facilita la difusión (GitHub Pages)
 
-- Orden de la información 
+- Utiliza texto plano y todos los recursos de Quarto
 
-- Diseño de la presentación 
-:::
+- Permite combinar texto y código
 
 ## YAML
 
@@ -31,6 +29,18 @@ editor: source
 
 - Veamos un ejemplo con el YAML de esta presentación 
 
+## Ejemplo
+
+    --- # <1>
+    format:
+      revealjs:
+        theme: 
+              - taller-elsoc.scss 
+        transition: slide
+        transition-speed: slow
+    editor: source
+    --- # <1>
+ 
 ::: notes
 Sacar la transición y renderizar la presentación sin ella
 :::
@@ -90,19 +100,21 @@ Texto sin '#'
 - Idealmente para comparar
 :::
 
-## Diseño de la presentación 
+## Diseño de la presentación
 
 - Las presentaciones (y todos los documentos .qmd) son **completamente personalizables**
 
 - Se pueden realizar cambios en **partes específicas** de la presentación así como a **nivel global**
-  
+
+
 ::: notes
 Cambiar el color de las letras de una slide, del background y por último jugar con el tema y scss
 {style="color: #212529;"}
 {data-background-color="#212529"}
+{.incremental .highlight-last style="font-size: 45px"}
 :::
 
-## Conclusiones
+## Palabras de cierre
 
 :::{.incremental style="font-size: 35px"}
 - Quarto es ideal para generar documentos divulgativos, sobre todo aquellos que mezclan **texto y código**
@@ -128,4 +140,4 @@ Cambiar el color de las letras de una slide, del background y por último jugar 
 
 [https://github.com/lisa-coes/taller-vsc-github](https://github.com/lisa-coes/taller-vsc-github)
 
-# Gracias! 
+# Muchas gracias! 
