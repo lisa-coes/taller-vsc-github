@@ -10,11 +10,11 @@ editor: source
 
 # {background-color="black" .white}
 
-### Módulo 1: Github y VSCode
+### Módulo 1: Reproducibilidad y VSCode
 
-Kevin Carrasco & Ismael Aguayo  
+Juan Carlos Castillo & Katherine Aravena
 
-Talleres de formación interna CIAE, 02 de octubre de 2025
+Talleres de Formación Interna - CIAE, Jueves 02 de octubre de 2025
 
 <hr>
 
