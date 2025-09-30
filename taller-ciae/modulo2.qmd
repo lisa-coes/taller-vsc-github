@@ -10,11 +10,11 @@ editor: source
 
 # {background-color="black" .white}
 
-### Módulo 2: Documentos y presentaciones en Quarto 
+### Módulo 2: Introducción VS Code
 
-Tomás Urzúa & René Canales 
+**Katherine Aravena Herrera**  
 
-Talleres de formación interna CIAE, 02 de octubre de 2025
+Talleres de Formación Interna - CIAE, Jueves 02 de octubre de 2025
 
 <hr>
 
@@ -22,11 +22,200 @@ Talleres de formación interna CIAE, 02 de octubre de 2025
 
 Laboratorio de Investigación Social Abierta - COES
 
+# Introducción a Visual Studio Code {.cover-title}
+
+## Objetivo y plan {.align-top}
+
+::: columns
+::: column
+::: {.objective-card}
+**Objetivo:** Comprender la _interfaz_ de VS Code y ejecutar un **mini flujo** con carpeta, archivo, terminal y atajos.
+:::
+:::
+
+::: column
+::: {.nonincremental}
+1. ¿Qué es VS Code?
+2. Interfaz general
+3. ¿Qué abrir?
+4. Atajos clave
+5. Personalización rápida
+6. Enfoque en el editor
+7. Cierre
+:::
+:::
+:::
+
+## ¿Qué es VS Code? {.align-top}
+
+::: columns
+::: column
+
+- Editor de código **gratuito, liviano y extensible**.
+- Multilenguaje: **R, Python, Quarto, LaTeX, HTML/CSS/JS**.
+- Integra **Terminal**, **Git**, **Depuración** y **Extensiones**.
+- Ideal para **flujos reproducibles** con **Git/GitHub** y **Quarto**.
+
+:::
+
+::: column
+
+![](imagenes/vscode1.jpg){fig-alt="Logo de Visual Studio Code" width="85%" style="border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.18);"}
+
+:::
+:::
+
+## Interfaz: visión general {data-transition="fade"}
+
+::: columns
+::: column
+
+<ul>
+  <li class="fragment" data-fragment-index="1"><strong>Barra de actividad</strong> (izquierda): Explorer, Search, Source Control, Run, Extensions.</li>
+  <li class="fragment" data-fragment-index="2"><strong>Barra lateral</strong>: contenido del panel activo (árbol de archivos, búsqueda, Git, etc.).</li>
+  <li class="fragment" data-fragment-index="3"><strong>Área de edición</strong>: pestañas, split view, vista previa.</li>
+  <li class="fragment" data-fragment-index="4"><strong>Paneles</strong> (abajo): <strong>Terminal</strong>, <strong>Problems</strong>, <strong>Output</strong>, <strong>Debug Console</strong>.</li>
+  <li class="fragment" data-fragment-index="5"><strong>Barra de estado</strong> (abajo): idioma, posición del cursor, rama Git, espacios/tabs, contenedor, etc.</li>
+</ul>
+
+:::
+
+::: column
+```{=html}
+<div class="ui-annot">
+  <img src="imagenes/inter2.jpg" class="ui-img" alt="Interfaz VS Code">
+
+  <div class="hotspot fragment" data-fragment-index="1" data-label="Barra de actividad"
+       style="left:1.5%; top:8%; width:5%; height:82%;"></div>
+
+  <div class="hotspot fragment" data-fragment-index="2" data-label="Barra lateral"
+       style="left:6.8%; top:14%; width:20%; height:66%;"></div>
+
+  <div class="hotspot fragment" data-fragment-index="3" data-label="Editor"
+       style="left:27.8%; top:8%; width:56%; height:70%;"></div>
+
+  <div class="hotspot fragment" data-fragment-index="4" data-label="Panel"
+       style="left:27.8%; top:79%; width:69.5%; height:18%;"></div>
+
+  <div class="hotspot fragment" data-fragment-index="5" data-label="Barra de estado"
+       style="left:1.5%; top:95%; width:95.5%; height:4%;"></div>
+</div>
+```
+:::
+:::
+
+## Así se ve
+
+![](imagenes/inter.jpg){.r-stretch}
+
+## Barra de actividad {.align-top}
+
+::: columns
+::: {.column width="26%"}
+![](imagenes/sidebar-vscode-vertical.png){width=132 fig-alt="Barra de actividad VS Code"}
+:::
+
+::: {.column width="74%" .icon-map .icon-sm}
+
+- **① Explorer** —> Tu carpeta de trabajo. Aquí ves y ordenas todos los archivos y subcarpetas del proyecto (crear, renombrar, mover o borrar).
+
+- **② Search** —> Busca en todo el proyecto. Encuentra palabras o frases en todos los archivos y permite reemplazarlas de una sola vez.
+
+- **③ Source Control (Git)** —> Historial y versiones. Guarda cambios con un “commit”, revisa diferencias y sincroniza con GitHub u otro repositorio.
+
+- **④ Run & Debug** —> Probar y encontrar errores. Ejecuta tu programa y, si algo falla, te deja avanzar paso a paso para ver qué está pasando.
+
+- **⑤ Remote Explorer (extensión)** —> Trabajar a distancia. Abre proyectos que están en otra máquina o entorno (SSH, WSL, contenedores) como si fueran locales.
+
+- **⑥ Extensions** —> Añadir funciones. Instala complementos que suman lenguajes, temas, correctores de estilo, soporte para Quarto, etc.
+
+- **⑦ Testing** —> Comprobar automáticamente. Ejecuta pruebas que verifican que tu código sigue funcionando al hacer cambios.
+
+- **⑧ R (extensión)** —> Herramientas para R. Consola interactiva, enviar líneas o bloques de código y buena integración con **Quarto** y notebooks.
+
+:::
+:::
+
+## Para comenzar {.align-top}
+
+::: columns
+::: {.column width="64%"}
+
+### Desde la interfaz
+- En la **barra de actividad** (izquierda), haz clic en **Explorer**.
+- En la vista **Explorer**:
+  - **Abrir carpeta…** → muestra el **árbol de archivos** en la barra lateral.
+  - **Nuevo archivo** / **Nueva carpeta** (botones sobre el árbol).
+  - **Arrastrar y soltar** una carpeta desde tu sistema → se abre como área de trabajo.
+- En la **pantalla de Bienvenida** también tienes **Open Folder** y **Open File**.
+- ¿Para **clonar un repositorio**? 
+
+:::
+
+::: {.column width="36%" .quick-mini}
 
 
-{{< include m2-p1.qmd >}}
+### Comandos rápidos 
+- **Quick Open**: `Ctrl+P` → ir a cualquier archivo por nombre.
+- **Abrir archivo**: `Ctrl+O`
+- **Nuevo archivo**: `Ctrl+N`
+- **Abrir carpeta**: `Ctrl+K` luego `Ctrl+O`
+- **Cambiar área de trabajo**: `Ctrl+K` luego `Ctrl+R` (recientes)
+- **Paleta de comandos**: `Ctrl+Shift+P` por ejemplo:
+  - **Git: Clone**
+  - **Quarto: New document**
 
-{{< include m2-p2.qmd >}}
+:::
+:::
 
+## Personalización rápida {.align-top data-incremental=false}
 
+::: columns
+::: column
 
+### VSC en español
+1) `Ctrl+Shift+P` → **Configure Display Language**  
+2) Elegir **Español** → **Restart**  
+3) Verifica la extensión **Spanish Language Pack** en Extensiones
+
+:::
+::: column
+
+### Temas de color
+- Archivo → Preferencias → Temas → **Tema de color**
+- Predeterminado: **Dark Modern**
+- Sugerencia: prueba **Light Modern** o instala otros temas del Marketplace
+
+:::
+::: column
+
+### Áreas de trabajo
+- **Carpeta** única (recomendado para cursos): Archivo → Abrir carpeta…
+- **Workspace (multi-carpeta)**: Agregar carpeta… → Guardar área de trabajo como…
+- Nota: cada área puede tener su propia configuración en **.vscode/**
+
+:::
+::: column
+
+### Extensiones
+- `Ctrl+Shift+X` → buscar → **Instalar**
+- Recomendadas: **Spanish Language Pack**, **GitLens**, **GitHub Pull Requests**, **Python**, **R**, **Quarto**, **Markdown All in One**, **ESLint**, **Prettier**
+
+:::
+:::
+
+## Más información {#mas-info}
+
+::: {.mb-3}
+[VS Code Essentials](https://microsoft.github.io/vscode-essentials/en/notice.html){.btn .btn-primary .btn-sm target=_blank rel="noopener"}
+[Manuales mclibre.org](https://www.mclibre.org/consultar/informatica/index.html){.btn .btn-outline-secondary .btn-sm target=_blank rel="noopener"}
+[Documentación oficial VS Code](https://code.visualstudio.com/docs){.btn .btn-outline-secondary .btn-sm target=_blank rel="noopener"}
+:::
+
+::: {.card .shadow-sm #copilot-img style="max-width:980px"}
+![](imagenes/IA_vs.jpg){.card-img-top alt="Uso de GitHub Copilot en Visual Studio Code"}
+
+::: {.card-body}
+Uso de **GitHub Copilot** en Visual Studio Code.  
+:::
+:::

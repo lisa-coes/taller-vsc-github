@@ -2,18 +2,18 @@
 format:
   revealjs:
     theme: 
-           - taller-elsoc.scss 
+           - taller-ciae.scss 
     transition: slide
     transition-speed: slow
 editor: source  
 ---
 
-# {background-color="black" .white}
+# {background-color="black"}
 
-### Taller Flujo de Investigación Reproducible con Github, VSCode y Quarto
+### Herramientas computacionales para la investigación social reproducible
 
 
-Escuela de invierno ELSOC, 01 de agosto de 2025
+Talleres de Formación Interna - CIAE, Jueves 02 de octubre de 2025
 
 <hr>
 
@@ -24,3 +24,7 @@ Laboratorio de Investigación Social Abierta - COES
 {{< include modulo1.qmd >}}
 
 {{< include modulo2.qmd >}}
+
+{{< include modulo3.qmd >}}
+
+{{< include modulo4.qmd >}}

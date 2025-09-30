@@ -1,0 +1,94 @@
+---
+format:
+  revealjs:
+    theme: 
+           - taller-ciae.scss 
+    transition: slide
+    transition-speed: slow
+editor: source  
+---
+
+# {background-color="black" .white}
+
+### Módulo 4: Git y Github
+
+Kevin Carrasco
+
+Talleres de Formación Interna - CIAE, Jueves 02 de octubre de 2025
+
+<hr>
+
+![](images/lisa.png){width="80%"}
+
+Laboratorio de Investigación Social Abierta - COES
+
+# Repositorios y apertura {data-background-color="black"}
+
+## {data-background-color="black"}
+
+### La escritura en texto simple (como Markdown o Quarto) permite implementar un sistema de control de versiones, además de herramientas de respaldo, colaboración y comunicación
+
+
+## Git
+
+::: {.columns}
+::: {.column width="40%"}
+![](images/git.png)
+:::
+
+::: {.column width="60%"}
+- es una especie de memoria o registro local que guarda información sobre:
+
+  - quién hizo un cambio
+  - cuándo lo hizo
+  - qué hizo
+
+- mantiene la información de todos los cambios en la historia de la carpeta / repositorio local
+
+- se puede sincronizar con un repositorio remoto (ej. Github)
+:::
+:::
+
+## Git/github
+
+- actualmente, Git / Github posee más de 100 millones de repositorios
+
+- mayor fuente de código en el mundo
+
+- ha transitado desde el mundo de desarrollo de software hacia distintos ámbitos de trabajo colaborativo y abierto
+
+- entorno de trabajo que favorece la ciencia abierta
+
+
+## {data-background-color="black"}
+
+### [Git no es un registro de versiones de archivos específicos, sino de una carpeta completa]{.red}
+
+### [Guarda *"fotos"* de momentos específicos de la carpeta, y esta foto se *saca* mediante un]{.red} **commit**
+
+##
+
+![](images/gitflow.jpeg)
+
+## Commits
+
+- El **commit** es el procedimiento fundamental del control de versiones
+
+- Git no registra cualquier cambio que se "guarda", sino los que se "comprometen" (commit).
+
+- En un **commit**
+  - se seleccionan los archivos cuyo cambio se desea registrar (*stage*)
+  - se registra lo que se está comprometiendo en el cambio (mensaje de commit)
+
+## ¿Cuándo hacer un commit?
+
+- según conveniencia
+
+- sugerencias:
+
+  - que sea un momento que requiera registro (momento de foto)
+  
+  - no para cambios menores
+  
+  - no esperar muchos cambios distintos que puedan hacer perder el sentido del commit
+
