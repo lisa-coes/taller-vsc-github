@@ -1,11 +1,19 @@
 ---
 format:
   revealjs:
-    theme: 
-           - taller-ciae.scss 
-    transition: slide
+    theme: lisa.scss
+    title-slide: false
+    width: 1100
+    height: 700
+    margin: 0.06
+    center: true
+    maxScale: 1
+    minScale: 0.2
+    transition: fade
     transition-speed: slow
-editor: source  
+    slideNumber: true
+    incremental: true
+    auto-stretch: false
 ---
 
 # {background-color="black" .white}
