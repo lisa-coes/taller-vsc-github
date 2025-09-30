@@ -24,7 +24,7 @@ Laboratorio de Investigación Social Abierta - COES
 
 # {background-color="black" .white}
 
-## Antes de comenzar
+## Antes de comenzar 
 
 - [Instalar Visual Studio Code](https://code.visualstudio.com/)
 
@@ -62,7 +62,7 @@ El [Laboratorio de Investigación Social Abierta (LISA)]{.red} tiene por objetiv
 :::
 :::
 
-### [[https://lisacoes.netlify.app/](https://lisacoes.netlify.app/)]{.content-box-red .center-container}
+### [[https://lisacoes.com/](https://lisacoes.com/)]{.content-box-red .center-container}
 
 ## Ciencia abierta
 
@@ -232,7 +232,7 @@ B. *Protocolo* reproducible
 
 ## Propuesta: **Protocolo IPO**
 
-![](https://lisacoes.com/input/ipo-hex.png)
+![](https://lisa-coes.netlify.app/input/ipo-hex.png)
 
 ## Estructura IPO
 

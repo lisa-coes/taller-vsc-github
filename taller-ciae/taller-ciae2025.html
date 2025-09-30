@@ -187,7 +187,7 @@
     }
   </style>
 </head>
-<body class="quarto-light">
+<body class="kathy quarto-light">
   <div class="reveal">
     <div class="slides">
 
@@ -245,7 +245,7 @@
 </div><div class="column" style="width:60%;">
 <p>El <span class="red">Laboratorio de Investigación Social Abierta (LISA)</span> tiene por objetivo ofrecer herramientas y orientaciones para la apertura científica de las distintas etapas de los proyectos de investigación en ciencias sociales.</p>
 </div></div>
-<h3 id="httpslisacoes.netlify.app"><span class="content-box-red center-container"><a href="https://lisacoes.netlify.app/">https://lisacoes.netlify.app/</a></span></h3>
+<h3 id="httpslisacoes.com"><span class="content-box-red center-container"><a href="https://lisacoes.com/">https://lisacoes.com/</a></span></h3>
 </section>
 <section id="ciencia-abierta" class="slide level2">
 <h2>Ciencia abierta</h2>
@@ -381,7 +381,7 @@
 <section id="propuesta-protocolo-ipo" class="slide level2">
 <h2>Propuesta: <strong>Protocolo IPO</strong></h2>
 
-<img data-src="https://lisacoes.com/input/ipo-hex.png" class="r-stretch"></section>
+<img data-src="https://lisa-coes.netlify.app/input/ipo-hex.png" class="r-stretch"></section>
 <section id="estructura-ipo" class="slide level2">
 <h2>Estructura IPO</h2>
 
@@ -392,6 +392,174 @@
 <li><p><a href="https://lisacoes.com/ipo-repro/">https://lisacoes.com/ipo-repro/</a></p></li>
 <li><p><a href="https://github.com/lisa-coes/ipo">https://github.com/lisa-coes/ipo</a></p></li>
 </ul>
+<!-- ===== CSS LOCAL Y AISLADO A ESTE QMD ===== -->
+<style>
+/* Tipografía base solo para este QMD */
+.kathy .reveal { font-size: 26px; line-height: 1.32; color:#111827; }
+
+/* H2 del tema: hacerlo más discreto para este QMD */
+.kathy .reveal .slides section h2{
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  line-height: 1.10;
+  margin-bottom: clamp(0.8rem, 1.6vw, 1.25rem);
+  letter-spacing: -0.2px;
+}
+.kathy .reveal .slides section > h2:first-child{ margin-top:-0.4rem; }
+
+/* Utilidad para alinear una slide arriba */
+.kathy .align-top{
+  display:flex !important; flex-direction:column; justify-content:flex-start;
+}
+
+/* Tarjeta del objetivo */
+.kathy .objective-card{
+  border-left:6px solid #D91A2A; background:rgba(217,26,42,.08);
+  border-radius:12px; padding:14px 16px; box-shadow:0 6px 18px rgba(17,24,39,.06);
+}
+
+/* Columna con mapa de iconos (más compacta) */
+.kathy .icon-map{ font-size:.94em; line-height:1.28; }
+.kathy .icon-map ul{ list-style:none; margin:0; padding:0; }
+.kathy .icon-map li{ padding:.42rem .2rem .55rem; border-top:1px solid rgba(17,24,39,.10); }
+.kathy .icon-map li:first-child{ border-top:0; }
+.kathy .icon-map li > strong:first-child{ color:#D91A2A; font-weight:800; letter-spacing:.2px; }
+.kathy .icon-map code{
+  font-size:.88em; background:#F3F4F6; border:1px solid #E5E7EB; padding:.06em .35em; border-radius:6px;
+}
+
+/* Bloque de atajos pequeño */
+.kathy .quick-mini{ font-size:.92em; line-height:1.26; }
+.kathy .quick-mini li{ margin:.26rem 0; }
+.kathy .quick-mini code{ font-size:.9em; }
+
+/* Anotaciones (hotspots) sobre imagen */
+.kathy .ui-annot{ position:relative; width:100%; }
+.kathy .ui-annot .ui-img{ display:block; width:100%; height:auto; border-radius:10px; }
+.kathy .hotspot{
+  position:absolute; border:3px solid #D91A2A; border-radius:12px;
+  background:rgba(217,26,42,.10); box-shadow:0 8px 24px rgba(0,0,0,.18);
+  pointer-events:none; opacity:0; visibility:hidden; transition:opacity .18s ease;
+}
+.kathy .hotspot::after{
+  content:attr(data-label); position:absolute; top:6px; left:8px;
+  display:inline-block; padding:.14rem .45rem; font-weight:800; line-height:1;
+  background:#fff; color:#111827; border:2px solid #D91A2A; border-radius:999px;
+  box-shadow:0 4px 10px rgba(0,0,0,.08); font-size:clamp(0.62rem,1.3vw,0.9rem);
+}
+.kathy .reveal .fragment.visible.hotspot{ opacity:1; visibility:visible; }
+
+/* Imagen barra vertical: sombra y límite de altura */
+.kathy img[alt="Barra de actividad VS Code"]{
+  display:block; margin:.2rem auto 0; border-radius:12px;
+  box-shadow:0 8px 22px rgba(0,0,0,.12); max-height:70vh;
+}
+
+/* ===== Botones (scope: solo este QMD) ===== */
+.kathy .btn{
+  display:inline-flex; align-items:center; gap:.45rem;
+  padding:.38rem .80rem;
+  border:2px solid transparent; border-radius:10px;
+  font-weight:700; letter-spacing:.01em; line-height:1;
+  text-decoration:none !important; cursor:pointer;
+  transition:transform .12s ease, box-shadow .12s ease,
+             background .2s ease, border-color .2s ease, color .2s ease;
+  box-shadow:0 3px 8px rgba(17,24,39,.06);
+  color:inherit;
+}
+.kathy .btn:hover{ transform:translateY(-1px); }
+.kathy .btn:active{ transform:translateY(0); }
+.kathy .btn:focus{ outline:0; box-shadow:0 0 0 3px rgba(217,26,42,.25); }
+
+/* Tamaño pequeño */
+.kathy .btn-sm{ padding:.30rem .68rem; font-size:.90em; border-radius:9px; }
+
+/* Variantes */
+.kathy .btn-primary{
+  background:#D91A2A; border-color:#D91A2A; color:#fff !important;
+}
+.kathy .btn-primary:hover{
+  background:#b51622; border-color:#b51622; color:#fff !important;
+}
+.kathy .btn-outline-secondary{
+  background:transparent; border-color:#E5E7EB; color:#111827 !important;
+}
+.kathy .btn-outline-secondary:hover{
+  background:#F3F4F6; border-color:#D1D5DB;
+}
+
+/* Espaciado cuando hay varios botones seguidos */
+.kathy .mb-3 .btn{ margin-right:.35rem; }
+
+/* ===== Tarjeta (card) mínima para la imagen y texto ===== */
+.kathy .card{
+  border:1px solid #E5E7EB; background:#fff; border-radius:14px; overflow:hidden;
+}
+.kathy .shadow-sm{ box-shadow:0 8px 22px rgba(17,24,39,.08); }
+.kathy .card-img-top{ display:block; width:100%; height:auto; }
+.kathy .card .card-body{ padding:.8rem 1rem; }
+
+/* ===== Centrar los H2 de cada slide (título principal) ===== */
+.kathy .reveal .slides section > h2:first-child{
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Si usas .align-top, sigue arriba pero centrado */
+.kathy .reveal .slides section.align-top > h2:first-child{
+  text-align: center;
+}
+
+.kathy .icon-map.icon-xs{
+  font-size: clamp(0.98rem, 1.22vw, 1.10rem); /* antes máx 0.98 → ahora 1.10 */
+  line-height: 1.26;
+}
+.kathy .icon-map.icon-xs li{
+  padding: .30rem .12rem .36rem;
+}
+.kathy .icon-map.icon-xs code{
+  font-size: .92em;
+}
+
+/* Pantallas de poca altura: aún grande pero sin desbordar */
+@media (max-height: 760px){
+  .kathy .icon-map.icon-xs{
+    font-size: clamp(0.92rem, 1.15vw, 1.04rem);
+    line-height: 1.24;
+  }
+}
+
+/* ===== Quick mini (columna derecha) — versión compacta “como antes” ===== */
+.kathy .quick-mini{
+  font-size: 0.80em;        /* antes solía ser ~0.74–0.92; elegimos un punto medio cómodo */
+  line-height: 1.26;
+}
+.kathy .quick-mini h3,
+.kathy .quick-mini h4{
+  margin-top: 0;
+  margin-bottom: .45rem;
+  font-weight: 800;
+  font-size: 1.05em;        /* título un poco más chico que el resto de la slide */
+  text-align: left;         /* no heredamos centrado de h2 */
+}
+.kathy .quick-mini ul{ margin: 0; padding-left: 1rem; }
+.kathy .quick-mini li{ margin: .26rem 0; }
+.kathy .quick-mini code{
+  font-size: .90em;
+  background: #F3F4F6;
+  border: 1px solid #E5E7EB;
+  padding: .02em .32em;
+  border-radius: 6px;
+}
+
+/* Ajuste si la pantalla tiene poca altura: aún más compacto */
+@media (max-height: 760px){
+  .kathy .quick-mini{ font-size: 0.78em; line-height: 1.24; }
+}
+
+
+</style>
 </section></section>
 <section>
 <section id="section-5" class="title-slide slide level1 white center" data-background-color="black">
@@ -488,7 +656,7 @@
 <div class="columns">
 <div class="column" style="width:26%;">
 <p><img data-src="imagenes/sidebar-vscode-vertical.png" alt="Barra de actividad VS Code" width="132"></p>
-</div><div class="column icon-map icon-sm" style="width:74%;">
+</div><div class="column icon-map icon-xs" style="width:74%;">
 <ul>
 <li><p><strong>① Explorer</strong> —&gt; Tu carpeta de trabajo. Aquí ves y ordenas todos los archivos y subcarpetas del proyecto (crear, renombrar, mover o borrar).</p></li>
 <li><p><strong>② Search</strong> —&gt; Busca en todo el proyecto. Encuentra palabras o frases en todos los archivos y permite reemplazarlas de una sola vez.</p></li>
@@ -496,8 +664,7 @@
 <li><p><strong>④ Run &amp; Debug</strong> —&gt; Probar y encontrar errores. Ejecuta tu programa y, si algo falla, te deja avanzar paso a paso para ver qué está pasando.</p></li>
 <li><p><strong>⑤ Remote Explorer (extensión)</strong> —&gt; Trabajar a distancia. Abre proyectos que están en otra máquina o entorno (SSH, WSL, contenedores) como si fueran locales.</p></li>
 <li><p><strong>⑥ Extensions</strong> —&gt; Añadir funciones. Instala complementos que suman lenguajes, temas, correctores de estilo, soporte para Quarto, etc.</p></li>
-<li><p><strong>⑦ Testing</strong> —&gt; Comprobar automáticamente. Ejecuta pruebas que verifican que tu código sigue funcionando al hacer cambios.</p></li>
-<li><p><strong>⑧ R (extensión)</strong> —&gt; Herramientas para R. Consola interactiva, enviar líneas o bloques de código y buena integración con <strong>Quarto</strong> y notebooks.</p></li>
+<li><p><strong>⑦ R (extensión)</strong> —&gt; Herramientas para R. Consola interactiva, enviar líneas o bloques de código y buena integración con <strong>Quarto</strong> y notebooks.</p></li>
 </ul>
 </div></div>
 </section>
@@ -572,11 +739,11 @@
 <div class="mb-3">
 <p><a href="https://microsoft.github.io/vscode-essentials/en/notice.html" class="btn btn-primary btn-sm" target="_blank" rel="noopener">VS Code Essentials</a> <a href="https://www.mclibre.org/consultar/informatica/index.html" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Manuales mclibre.org</a> <a href="https://code.visualstudio.com/docs" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Documentación oficial VS Code</a></p>
 </div>
-<div id="copilot-img" class="card shadow-sm" style="max-width:980px">
-<p><img data-src="imagenes/IA_vs.jpg" class="card-img-top" alt="Uso de GitHub Copilot en Visual Studio Code"></p>
 <div class="card-body">
 <p>Uso de <strong>GitHub Copilot</strong> en Visual Studio Code.</p>
 </div>
+<div id="copilot-img" class="card shadow-sm" style="max-width:980px">
+<p><img data-src="imagenes/IA_vs.jpg" class="card-img-top" alt="Uso de GitHub Copilot en Visual Studio Code"></p>
 </div>
 </section></section>
 <section>
