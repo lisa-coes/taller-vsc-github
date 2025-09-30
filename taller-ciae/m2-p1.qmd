@@ -1,0 +1,224 @@
+---
+format:
+  revealjs:
+    theme: 
+           - taller-ciae.scss 
+    transition: slide
+    transition-speed: slow
+editor: source  
+---
+
+
+# Parte 1: Documentos en Quarto
+
+![](images/quarto-logo.png)
+
+## ¿Qué es Quarto?
+
+- [Quarto](https://quarto.org/) es un sistema moderno de creación de documentos dinámicos, informes, presentaciones, libros, sitios web y más, a partir de archivos de texto plano y por medio del conversor universal de documentos [Pandoc](https://pandoc.org/).
+
+- Evolución de los sistemas de autoría como Jupyter, R Markdown, todo dentro del mismo documento. 
+
+##
+
+![](images/quarto-press.png)
+
+## Características Principales
+
+-   **Multiplataforma**
+
+-   **Basado en Markdown** 
+
+-   **Soporte para múltiples lenguajes** 
+
+-   **Multitud de formatos de salida** 
+
+-   **Soporte para publicación científica** 
+  
+-   **Integración entornos de desarrollo** (RStudio, VSC, etc)
+
+-   **Extensible** 
+
+---
+
+## Instalación en VSC
+
+:::: {.columns}
+::: {.column width="60%"}
+- Requisitos: Quarto CLI y Visual Studio Code (VSC)
+- Instalación de Quarto: `https://quarto.org/docs/get-started/`
+- Verificación de instalación:
+  ```bash
+  quarto check
+  ```
+- Extensión "Quarto" para Visual Studio Code
+:::
+
+
+::: {.column width="40%"}
+![](images/vscode-extension.png){width="50%" style="display:block; margin-left:auto; margin-right:0;"}
+:::
+::::
+
+
+## Estructura de un documento
+
+- Archivo `.qmd`
+- Encabezado YAML:
+  ```yaml
+  title: "Mi documento"
+  author: "Juan Castillo"
+  date: today
+  format: html
+  ```
+- Cuerpo:
+  - Markdown para secciones, énfasis, listas, etc.
+  - Bloques de código
+  - Bibliografía
+
+## Ejemplo
+       
+    --- # <1>
+    title: "Tutorial Quarto" # <1>
+    author: "JC" # <1>
+    date: "2025-08-01" # <1>
+    format: html # <1>
+    lang: es # <1>
+    --- # <1>
+
+    # Bienvenidos a este tutorial de **Quarto**. # <2>
+
+    Quarto está especialmente diseñado para elaborar documentos # <2>
+    científicos y técnicos reproducibles
+    
+
+- Para renderizar:
+  - Desde el terminal: `quarto render archivo.qmd`
+  - VSC: Ctrl+Shift+P ->  quarto preview 
+
+## Base de escritura: Markdown
+
+:::: {.columns}
+::: {.column width="60%"}
+- Encabezados: `#`, `##`, `###`
+- Listas:
+  - Viñetas: `-` o `*`
+  - Numeradas: `1.`, `2.`
+- Énfasis: `*cursiva*`, `**negrita**`
+- Código en línea: `` `código` ``
+- Enlaces: `[texto](url)`
+:::
+
+::: {.column width="40%"}
+![](images/markdown-syntax.png)
+:::
+::::
+
+
+## Ejemplo
+
+    --- # <1>
+    title: "Tutorial Quarto" # <1>
+    author: "JC" # <1>
+    date: "2025-08-01" # <1>
+    format: html # <1>
+    lang: es # <1>
+    --- # <1>
+
+    # Bienvenidos a este tutorial de **Quarto**. # <2>
+
+    Quarto está especialmente diseñado para elaborar documentos # <2>
+    científicos y técnicos reproducibles
+
+    ## Este es un subtítulo
+
+    Ahora vamos a ensayar **negritas** y _cursivas_
+
+    ### Y un título de tercer orden
+
+    Y una lista
+
+    - con viñetas
+    - ...
+    - ...
+  
+    Y otra numerada:
+
+    1. punto 1
+    2. punto 2
+    3. ...
+    
+    ## Links e imágenes
+
+    [Este es un link a Github](https://github.com/)  
+
+    ![Imagen online](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gutenberg.jpg/330px-Gutenberg.jpg)
+
+
+
+
+## Personalización visual del HTML
+
+- Temas: `cosmo`, `flatly`, `lux`, `darkly`, etc.
+- Opciones comunes en YAML:
+  ```yaml
+  toc: true
+  number-sections: true
+  code-fold: true
+  ```
+- Personalización con CSS externo:
+  ```yaml
+  css: estilos.css
+  ```
+
+## Ejemplo
+
+    --- # <1>
+    title: "Tutorial Quarto" # <1>
+    author: "JC" # <1>
+    date: "2025-08-01" # <1>
+    format: html # <1>
+    lang: es # <1>
+    toc: true
+    number-sections: true
+    theme: darkly
+    css: estilos.css
+    --- # <1>
+
+    # Bienvenidos a este tutorial de **Quarto**. # <2>
+
+    Quarto está especialmente diseñado para elaborar documentos # <2>
+    científicos y técnicos reproducibles
+
+    ## Este es un subtítulo
+
+    Ahora vamos a ensayar **negritas** y _cursivas_
+
+    ### Y un título de tercer orden
+
+    Y una lista
+
+    - con viñetas
+    - ...
+    - ...
+  
+    Y otra numerada:
+
+    1. punto 1
+    2. punto 2
+    3. ...
+
+
+## Extensiones
+
+- Integración con R
+- Referencias bibliográficas
+- Renderizado a pdf, word
+- Sitios web
+- Presentaciones
+
+## Recursos
+
+- Recursos para seguir aprendiendo:
+  - [https://quarto.org](https://quarto.org)
+- [Creación de documentos científicos con Quarto](https://aprendeconalf.es/quarto-textos-cientificos/)

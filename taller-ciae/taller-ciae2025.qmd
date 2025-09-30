@@ -1,0 +1,26 @@
+---
+format:
+  revealjs:
+    theme: 
+           - taller-elsoc.scss 
+    transition: slide
+    transition-speed: slow
+editor: source  
+---
+
+# {background-color="black" .white}
+
+### Taller Flujo de Investigación Reproducible con Github, VSCode y Quarto
+
+
+Escuela de invierno ELSOC, 01 de agosto de 2025
+
+<hr>
+
+![](images/lisa.png){width="80%"}
+
+Laboratorio de Investigación Social Abierta - COES
+
+{{< include modulo1.qmd >}}
+
+{{< include modulo2.qmd >}}

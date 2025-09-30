@@ -1,0 +1,144 @@
+---
+format:
+  revealjs:
+    theme: 
+           - taller-ciae.scss 
+    transition: slide
+    transition-speed: slow
+editor: source  
+---
+
+
+# Parte 2: Presentaciones en Quarto 
+
+## ¿Por qué usar Quarto para presentaciones?
+
+- Permite controlar las versiones (Git)
+  
+- Facilita la difusión (GitHub Pages)
+
+- Utiliza texto plano y todos los recursos de Quarto
+
+- Permite combinar texto y código
+
+
+## YAML
+
+- Contiene las características que tendrá la presentación al momento de ser renderizada 
+  
+- Las especificaciones afectarán todo el documento 
+
+- Veamos un ejemplo con el YAML de esta presentación 
+
+## Ejemplo
+
+    --- # <1>
+    format:
+      revealjs:
+        theme: 
+              - taller-elsoc.scss 
+        transition: slide
+        transition-speed: slow
+    editor: source
+    --- # <1>
+ 
+::: notes
+Sacar la transición y renderizar la presentación sin ella
+:::
+
+## Slides
+
+- Cada slide se define a partir de un '#'
+  
+- Se pueden generar subtítulos dentro de una slide añadiendo '#' antes de un texto 
+
+# Slide con un '#'
+
+## Subtítulo con 2 '#'
+
+### Subtítulo con 3 '#'
+
+#### Subtítulo con 4 '#'
+
+Texto sin '#'
+
+## Orden de la información
+
+- La información puede ser presentada de distintas maneras 
+
+- Puede verse todo el texto de inmediato
+  
+- Todo a un mismo lado 
+  
+- Y sin ninguna variante
+
+## Orden de la presentación
+
+::::{.columns}
+:::{.column .incremental width="50%"}
+- **La información puede ser presentada de distintas maneras**
+
+- Puede verse secuencialmente
+:::
+
+:::{.column .incremental width="50%"}
+- Separando el texto en columnas
+  
+- *Y variando el estilo*
+:::
+::::
+
+## Orden de la presentación
+
+:::{.panel-tabset}
+### 1
+- La información puede ser presentada de distintas maneras 
+
+### 2
+- Puede ser separada en casillas
+
+### 3
+- Idealmente para comparar
+:::
+
+## Diseño de la presentación {data-background-color="#212529"}
+
+- Las presentaciones (y todos los documentos .qmd) son **completamente personalizables**
+
+- Se pueden realizar cambios en **partes específicas** de la presentación así como a **nivel global**
+
+
+::: notes
+Cambiar el color de las letras de una slide, del background y por último jugar con el tema y scss
+{style="color: #212529;"}
+{data-background-color="#212529"}
+{.incremental .highlight-last style="font-size: 45px"}
+:::
+
+## Palabras de cierre
+
+:::{.incremental style="font-size: 35px"}
+- Quarto es ideal para generar documentos divulgativos, sobre todo aquellos que mezclan **texto y código**
+
+- Los documentos son **completamente personalizables**
+
+- Es una **plataforma libre**, por lo que no es necesario pagar licencias ni piratear softwares
+
+- El conocimiento se vuelve **más accesible y transparente**
+:::
+
+## Recursos para seguir aprendiendo
+
+- [Presentaciones Quarto](https://quarto.org/docs/presentations/) y más documentación 
+  
+- [Videos explicativos](https://www.youtube.com/watch?v=EbAAmrB0luA) esenciales para aprender viendo
+
+- [Foro de Posit](https://forum.posit.co/) para mantenerse actualizado y resolver dudas
+
+- [Página LISA](https://lisa-coes.netlify.app/) y más sobre Ciencia Abierta
+
+## Repositorio
+
+[https://github.com/lisa-coes/taller-vsc-github](https://github.com/lisa-coes/taller-vsc-github)
+
+# Muchas gracias! 

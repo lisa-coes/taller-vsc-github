@@ -21,6 +21,7 @@ editor: source
 
 - Permite combinar texto y código
 
+
 ## YAML
 
 - Contiene las características que tendrá la presentación al momento de ser renderizada 
@@ -100,7 +101,7 @@ Texto sin '#'
 - Idealmente para comparar
 :::
 
-## Diseño de la presentación
+## Diseño de la presentación {data-background-color="#212529"}
 
 - Las presentaciones (y todos los documentos .qmd) son **completamente personalizables**
 

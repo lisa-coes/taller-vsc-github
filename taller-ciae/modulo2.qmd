@@ -1,0 +1,32 @@
+---
+format:
+  revealjs:
+    theme: 
+           - taller-ciae.scss 
+    transition: slide
+    transition-speed: slow
+editor: source  
+---
+
+# {background-color="black" .white}
+
+### Módulo 2: Documentos y presentaciones en Quarto 
+
+Tomás Urzúa & René Canales 
+
+Talleres de formación interna CIAE, 02 de octubre de 2025
+
+<hr>
+
+![](images/lisa.png){width="80%"}
+
+Laboratorio de Investigación Social Abierta - COES
+
+
+
+{{< include m2-p1.qmd >}}
+
+{{< include m2-p2.qmd >}}
+
+
+
