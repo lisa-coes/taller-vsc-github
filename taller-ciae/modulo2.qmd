@@ -188,17 +188,21 @@ body-classes: kathy   # <- aísla estilos SOLO para este QMD
 
 # {background-color="black" .white}
 
-### Módulo 2: Introducción VS Code
+<br>
 
-**Katherine Aravena Herrera**  
+<p align="right">
+  <img src="images/lisa.png" width="15%">
+</p>
+<br>
+<br>
+<span style="font-size:60px; color:white; font-weight:bold;">Módulo 2: Introducción VS Code</span>
 
-Talleres de Formación Interna - CIAE, Jueves 02 de octubre de 2025
-
+<br>
 <hr>
 
-![](images/lisa.png){width="80%"}
 
-Laboratorio de Investigación Social Abierta - COES
+Katherine Aravena Herrera 
+
 
 # Introducción a Visual Studio Code {.cover-title}
 
