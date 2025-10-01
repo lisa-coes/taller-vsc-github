@@ -10,22 +10,23 @@ editor: source
 
 # {background-color="black" .white}
 
-### Módulo 1: Reproducibilidad en la investigación social
+<br>
+
+<p align="right">
+  <img src="images/lisa.png" width="15%">
+</p>
+<br>
+<br>
+<span style="font-size:60px; color:white; font-weight:bold;">Módulo 1: Reproducibilidad en la investigación social</span>
+
+<br>
+<hr>
 
 Juan Carlos Castillo
 
-Talleres de Formación Interna - CIAE, Jueves 02 de octubre de 2025
 
-<hr>
-
-![](images/lisa.png){width="80%"}
-
-Laboratorio de Investigación Social Abierta - COES
-
-# {background-color="black" .white}
-
-## Antes de comenzar 
-
+##  Antes de comenzar
+ 
 - [Instalar Visual Studio Code](https://code.visualstudio.com/)
 
 - [Instalar Git](https://git-scm.com/downloads)
@@ -34,15 +35,6 @@ Laboratorio de Investigación Social Abierta - COES
 
 - Dejar su nombre de usuario de Github en el chat
 
-# Contenidos Módulo 1
-
-:::{.incremental .highlight-last style="font-size: 35px"}
-
-1. Introducción al flujo de investigación reproducible
-2. Escritura en texto plano (VS Code)
-
-
-:::
 
 ##
 
@@ -62,16 +54,13 @@ El [Laboratorio de Investigación Social Abierta (LISA)]{.red} tiene por objetiv
 :::
 :::
 
-### [[https://lisacoes.com/](https://lisacoes.com/)]{.content-box-red .center-container}
+<hr>
+[[lisacoes.com](https://lisacoes.com/)]{.content-box-red .center-container}
 
 ## Ciencia abierta
 
 ![](images/flujo-herramientas.png)
 
-
-# Investigación reproducible {data-background-color="black"}
-
-¿Cómo organizamos el trabajo de investigación (en el momento del análisis y escritura)?
 
 ## Reproducibilidad
 
@@ -125,22 +114,17 @@ Los equipos informaron tanto hallazgos numéricos como conclusiones sustanciales
 :::
 
 
-# Flujos de investigación reproducible {data-background-color="black"}
+## Elementos de la investigación reproducible 
 
-- Texto plano
-- Carpetas y archivos
-- Autocontenido
-- Abierto
+- Trabajo en editor de texto (VSC)
+- Escritura en texto plano (Markdown)
+- Documentos y presentaciones abiertas y dinámicas (Quarto) 
+- Versionables (Git)
+- Repositorios abiertos (Github) 
+- [Organización de carpetas y archivos - IPO]
 
-## Ejemplo con procesador de texto tradicional
 
-![](images/W_workflow.png)
-
-## Ejemplo con procesador de texto tradicional
-
-![](images/realWord.png)
-
-## Algunas limitaciones
+## Algunas limitaciones de escritura con procesador de texto tradicional
 
 ::: {.columns}
 ::: {.column width="80%"}
@@ -183,66 +167,3 @@ Los equipos informaron tanto hallazgos numéricos como conclusiones sustanciales
 
 ::: 
 :::
-
-## Visual Studio Code
-
-- Editor de código fuente desarrollado por Microsoft para Windows, Linux, macOS y Web. Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente de código, fragmentos y refactorización de código.
-
-- Personalizable, por lo que los usuarios pueden cambiar el tema del editor, los atajos de teclado y las preferencias.
-
--  software gratuito y de código abierto,​ aunque la descarga oficial está bajo software privativo e incluye características personalizadas por Microsoft.
-
-## Así se ve VSC
-
-![](images/vscode-2.png)
-
-
-# Protocolo de flujo de investigación reproducible {data-background-color="black"}
-
-## Alternativas
-
-::: {.columns}
-::: {.column width="45%"}
-::: {.content-box-red}
-
- A. ad-hoc
- 
-  - cada investigador define numero de archivos, nombres, carpetas y organización
-  
-  - explicar al resto cómo se organiza
-  - documentar en un archivo cómo se organiza
-  
---> reproducibilidad y transparencia **LIMITADA**
-
-:::
-:::
-::: {.column width="45%"}
-::: {.content-box-blue}
-
-B. *Protocolo* reproducible
-
-  - **estructura** de carpetas y archivos interconectados que refieren a reglas conocidas (estándares)
-  
-  - **autocontenido**: toda la información necesaria para la reproducibilidad se encuentra en la carpeta raíz o directorio de trabajo.
-  
-:::
-:::
-:::
-
-
-## Propuesta: **Protocolo IPO**
-
-![](https://lisa-coes.netlify.app/input/ipo-hex.png)
-
-## Estructura IPO
-
-![](images/ipofolder.png)
-
-## Mayores detalles y plantilla de carpetas:
-
-
-- [https://lisacoes.com/ipo-repro/](https://lisacoes.com/ipo-repro/)
-
-- [https://github.com/lisa-coes/ipo](https://github.com/lisa-coes/ipo)
-
-
