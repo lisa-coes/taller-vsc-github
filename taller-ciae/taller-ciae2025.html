@@ -94,7 +94,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="taller-ciae2025_files/libs/revealjs/dist/theme/quarto-a14d76411c219925e803f894d28bacc7.css">
+  <link rel="stylesheet" href="taller-ciae2025_files/libs/revealjs/dist/theme/quarto-168b5f5ff526328aee847aa4549a0734.css">
   <link href="taller-ciae2025_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="taller-ciae2025_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="taller-ciae2025_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -192,27 +192,25 @@
     <div class="slides">
 
 
+<section>
 <section id="section" class="title-slide slide level1 center" data-background-color="grey">
 <h1></h1>
 <p><span style="font-size:60px; color:white; font-weight:bold;">Herramientas computacionales para la investigación social reproducible</span></p>
-<p><strong>Talleres de Formación Interna - CIAE, Jueves 02 de octubre de 2025</strong></p>
+<p><strong>Talleres de Formación Interna - CIAE, jueves 02 de octubre de 2025</strong></p>
 <hr>
-
-<img data-src="images/lisa.png" style="width:70.0%" class="r-stretch"><p>Laboratorio de Investigación Social Abierta - COES</p>
+<div class="columns v-center-container">
+<div class="column" style="width:60%;">
+<p><img data-src="images/lisa.png" style="width:70.0%"></p>
+<p>Laboratorio de Investigación Social Abierta</p>
+<p>COES</p>
 <p><a href="https://lisacoes.com/">lisacoes.com</a></p>
-</section>
-
-<section>
-<section id="section-1" class="title-slide slide level1 white center" data-background-color="black">
-<h1></h1>
-<p><br></p>
-<p align="right">
-<img src="images/lisa.png" width="15%">
-</p>
-<p><br> <br> <span style="font-size:60px; color:white; font-weight:bold;">Módulo 1: Reproducibilidad en la investigación social</span></p>
-<br>
-<hr>
+</div><div class="column" style="width:30%;">
 <p>Juan Carlos Castillo</p>
+<p>Kevin Carrasco</p>
+<p>René Canales</p>
+<p>Katherine Aravena</p>
+<p>Tomás Urzúa</p>
+</div></div>
 </section>
 <section id="antes-de-comenzar" class="slide level2">
 <h2>Antes de comenzar</h2>
@@ -220,10 +218,9 @@
 <li><p><a href="https://code.visualstudio.com/">Instalar Visual Studio Code</a></p></li>
 <li><p><a href="https://git-scm.com/downloads">Instalar Git</a></p></li>
 <li><p><a href="https://github.com/">Crear cuenta en github.com</a></p></li>
-<li><p>Dejar su nombre de usuario de Github en el chat</p></li>
 </ul>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
 <div class="columns v-center-container">
 <div class="column" style="width:40%;">
@@ -233,6 +230,59 @@
 </div></div>
 <hr>
 <p><span class="content-box-red center-container"><a href="https://lisacoes.com/">lisacoes.com</a></span></p>
+</section>
+<section id="nuestro-equipo" class="slide level2">
+<h2>Nuestro equipo</h2>
+<div class="{=html}">
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; justify-items: center; align-items: center;">
+<div style="text-align: center;">
+<img src="images/jc.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+<div>
+Juan Carlos Castillo
+</div>
+</div>
+<div style="text-align: center;">
+<img src="images/kevin.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+<div>
+Kevin Carrasco
+</div>
+</div>
+</div>
+</div>
+<div class="{=html}">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; justify-items: center; align-items: center;">
+<div style="text-align: center;">
+<img src="images/katherine.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+<div>
+Katherine Aravena
+</div>
+</div>
+<div style="text-align: center;">
+<img src="images/rene.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+<div>
+René Canales
+</div>
+</div>
+<div style="text-align: center;">
+<img src="images/tomas.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+<div>
+Tomás Urzúa
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="section-2" class="title-slide slide level1 white center" data-background-color="black">
+<h1></h1>
+<p><br></p>
+<p align="right">
+<img src="images/lisa.png" width="15%">
+</p>
+<p><br> <br> <span style="font-size:60px; color:white; font-weight:bold;">Módulo 1: Reproducibilidad en la investigación social</span></p>
+<br>
+<hr>
+<p>Juan Carlos Castillo</p>
 </section>
 <section id="ciencia-abierta" class="slide level2">
 <h2>Ciencia abierta</h2>
@@ -284,47 +334,9 @@
 <li>Repositorios abiertos (Github)</li>
 <li>[Organización de carpetas y archivos - IPO]</li>
 </ul>
-</section>
-<section id="algunas-limitaciones-de-escritura-con-procesador-de-texto-tradicional" class="slide level2">
-<h2>Algunas limitaciones de escritura con procesador de texto tradicional</h2>
-<div class="columns">
-<div class="column" style="width:80%;">
-<ul>
-<li><p>Barrera de <strong>pago/licencia</strong> para acceder a contenidos (propiedad)</p></li>
-<li><p>Difícil <strong>versionamiento</strong> y llevar registro de quién hizo qué cambio, barrera a la reproducibilidad y colaboración</p></li>
-<li><p>No permite un documento enteramente <strong>reproducible</strong> que combine texto y código de análisis (en caso de utilizarlo)</p></li>
-</ul>
-</div><div class="column" style="width:20%;">
-<p><img data-src="images/word.jpg"></p>
-</div></div>
-</section>
-<section id="propuesta-escritura-libre-y-abierta" class="slide level2">
-<h2>Propuesta: escritura libre y abierta</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<ul>
-<li><p>Independiente de programa comercial</p></li>
-<li><p>Independiente de plataformas específicas</p></li>
-<li><p>Permite combinar texto y análisis en un mismo documento</p></li>
-<li><p>Foco en los contenidos en lugar del formato</p></li>
-<li><p>Permite distintas opciones de formato final</p></li>
-</ul>
-</div><div class="column" style="width:40%;">
-<p><img data-src="images/quarto.png"> <img data-src="images/vscode.png"></p>
-</div></div>
 <!-- ===== CSS LOCAL Y AISLADO A ESTE QMD ===== -->
 <style>
-/* Tipografía base solo para este QMD */
-.kathy .reveal { font-size: 26px; line-height: 1.32; color:#111827; }
-
-/* H2 del tema: hacerlo más discreto para este QMD */
-.kathy .reveal .slides section h2{
-  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
-  line-height: 1.10;
-  margin-bottom: clamp(0.8rem, 1.6vw, 1.25rem);
-  letter-spacing: -0.2px;
-}
-.kathy .reveal .slides section > h2:first-child{ margin-top:-0.4rem; }
+.reveal { font-size: 34px; line-height: 1.32; color:#111827; }
 
 /* Utilidad para alinear una slide arriba */
 .kathy .align-top{
@@ -534,7 +546,7 @@
 <section id="interfaz-visión-general" class="slide level2" data-transition="fade">
 <h2>Interfaz: visión general</h2>
 <div class="columns">
-<div class="column">
+<div class="column quick-mini">
 <ul>
 <li class="fragment" data-fragment-index="1">
 <strong>Barra de actividad</strong> (izquierda): Explorer, Search, Source Control, Run, Extensions.
@@ -592,7 +604,7 @@
 <section id="para-comenzar" class="slide level2 align-top">
 <h2>Para comenzar</h2>
 <div class="columns">
-<div class="column" style="width:64%;">
+<div class="column quick-mini" style="width:64%;">
 <h3 id="desde-la-interfaz">Desde la interfaz</h3>
 <ul>
 <li>En la <strong>barra de actividad</strong> (izquierda), haz clic en <strong>Explorer</strong>.</li>
@@ -624,7 +636,7 @@
 <section id="personalización-rápida" class="slide level2 align-top" data-incremental="false">
 <h2>Personalización rápida</h2>
 <div class="columns">
-<div class="column">
+<div class="column quick-mini">
 <h3 id="vsc-en-español">VSC en español</h3>
 <ol type="1">
 <li><code>Ctrl+Shift+P</code> → <strong>Configure Display Language</strong><br>
@@ -633,21 +645,21 @@
 </li>
 <li>Verifica la extensión <strong>Spanish Language Pack</strong> en Extensiones</li>
 </ol>
-</div><div class="column">
+</div><div class="column quick-mini">
 <h3 id="temas-de-color">Temas de color</h3>
 <ul>
 <li>Archivo → Preferencias → Temas → <strong>Tema de color</strong></li>
 <li>Predeterminado: <strong>Dark Modern</strong></li>
 <li>Sugerencia: prueba <strong>Light Modern</strong> o instala otros temas del Marketplace</li>
 </ul>
-</div><div class="column">
+</div><div class="column quick-mini">
 <h3 id="áreas-de-trabajo">Áreas de trabajo</h3>
 <ul>
 <li><strong>Carpeta</strong> única (recomendado para cursos): Archivo → Abrir carpeta…</li>
 <li><strong>Workspace (multi-carpeta)</strong>: Agregar carpeta… → Guardar área de trabajo como…</li>
 <li>Nota: cada área puede tener su propia configuración en <strong>.vscode/</strong></li>
 </ul>
-</div><div class="column">
+</div><div class="column quick-mini">
 <h3 id="extensiones">Extensiones</h3>
 <ul>
 <li><code>Ctrl+Shift+X</code> → buscar → <strong>Instalar</strong></li>
@@ -657,7 +669,7 @@
 </section>
 <section id="mas-info" class="slide level2">
 <h2>Más información</h2>
-<div class="mb-3">
+<div class="mb-3 quick-mini">
 <p><a href="https://microsoft.github.io/vscode-essentials/en/notice.html" class="btn btn-primary btn-sm" target="_blank" rel="noopener">VS Code Essentials</a> <a href="https://www.mclibre.org/consultar/informatica/index.html" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Manuales mclibre.org</a> <a href="https://code.visualstudio.com/docs" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Documentación oficial VS Code</a></p>
 </div>
 <div class="card-body">
@@ -667,6 +679,7 @@
 <p><img data-src="imagenes/IA_vs.jpg" class="card-img-top" alt="Uso de GitHub Copilot en Visual Studio Code"></p>
 </div>
 </section></section>
+<section>
 <section id="section-5" class="title-slide slide level1 white center" data-background-color="black">
 <h1></h1>
 <p><br></p>
@@ -678,12 +691,48 @@
 <hr>
 <p>Tomás Urzúa &amp; René Canales</p>
 </section>
-
+<section id="algunas-limitaciones-de-escritura-con-procesador-de-texto-tradicional" class="slide level2">
+<h2>Algunas limitaciones de escritura con procesador de texto tradicional</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<ul>
+<li><p>Barrera de <strong>pago/licencia</strong> para acceder a contenidos (propiedad)</p></li>
+<li><p>Difícil <strong>versionamiento</strong> y llevar registro de quién hizo qué cambio, barrera a la reproducibilidad y colaboración</p></li>
+<li><p>No permite un documento enteramente <strong>reproducible</strong> que combine texto y código de análisis (en caso de utilizarlo)</p></li>
+</ul>
+</div><div class="column" style="width:20%;">
+<p><img data-src="images/word.jpg"></p>
+</div></div>
+</section>
+<section id="propuesta-escritura-libre-y-abierta" class="slide level2">
+<h2>Propuesta: escritura libre y abierta</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Independiente de programa comercial</p></li>
+<li><p>Independiente de plataformas específicas</p></li>
+<li><p>Permite combinar texto y análisis en un mismo documento</p></li>
+<li><p>Foco en los contenidos en lugar del formato</p></li>
+<li><p>Permite distintas opciones de formato final</p></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/quarto.png"> <img data-src="images/vscode.png"></p>
+</div></div>
+</section></section>
 <section>
 <section id="parte-1-documentos-en-quarto" class="title-slide slide level1 center">
 <h1>Parte 1: Documentos en Quarto</h1>
 
 <img data-src="images/quarto-logo.png" class="r-stretch"></section>
+<section id="qué-es-markdown" class="slide level2">
+<h2>¿Qué es markdown?</h2>
+<ul>
+<li><p>Forma de escritura simple con pocas marcas de formato</p></li>
+<li><p>Conversión a distintos formatos de salida (html, pdf)</p></li>
+<li><p>Soporta encabezados, tablas, imágenes, tablas de contenidos, ecuaciones, links…</p></li>
+<li><p>Filosofía: foco en contenido primero, el formato después.</p></li>
+</ul>
+</section>
 <section id="qué-es-quarto" class="slide level2">
 <h2>¿Qué es Quarto?</h2>
 <ul>
@@ -705,6 +754,13 @@
 <li><p><strong>Soporte para publicación científica</strong></p></li>
 <li><p><strong>Integración entornos de desarrollo</strong> (RStudio, VSC, etc)</p></li>
 <li><p><strong>Extensible</strong></p></li>
+</ul>
+</section>
+<section id="características-principales-1" class="slide level2">
+<h2>Características principales</h2>
+<ul>
+<li><p>Lenguaje que combina código (R) y texto (Markdown): Al igual que RMarkdown (.Rmd), Quarto permite combinar texto plano markdown y código de análisis R.</p></li>
+<li><p>Provee una serie de herramientas para generar documentos dinámicos y publicarlos</p></li>
 </ul>
 </section>
 <section id="instalación-en-vsc" class="slide level2">
@@ -1185,10 +1241,10 @@
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
-        showSlideNumber: 'all',
+        showSlideNumber: 'print',
 
         // Add the current slide number to the URL hash so that reloading the
         // page/copying the URL will return you to the same slide

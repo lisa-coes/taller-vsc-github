@@ -1,11 +1,12 @@
 ---
 format:
   revealjs:
-    theme: 
-           - taller-ciae.scss 
+    theme: taller-ciae.scss
     transition: slide
     transition-speed: slow
-editor: source  
+    slide-number: true
+    show-slide-number: print
+editor: source
 ---
 
 # {background-color="grey"}
@@ -13,15 +14,114 @@ editor: source
 <span style="font-size:60px; color:white; font-weight:bold;">Herramientas computacionales para la investigación social reproducible</span>  
 
 
-**Talleres de Formación Interna - CIAE, Jueves 02 de octubre de 2025**
+**Talleres de Formación Interna - CIAE, jueves 02 de octubre de 2025**
 
 <hr>
 
+::: {.columns .v-center-container}
+::: {.column width="60%"}
+
 ![](images/lisa.png){width="70%"}
 
-Laboratorio de Investigación Social Abierta - COES
+Laboratorio de Investigación Social Abierta
+
+COES
 
 [lisacoes.com](https://lisacoes.com/)
+
+:::
+
+::: {.column width="30%"}
+
+Juan Carlos Castillo
+
+Kevin Carrasco
+
+René Canales
+
+Katherine Aravena
+
+Tomás Urzúa
+
+
+:::
+:::
+
+##  Antes de comenzar
+ 
+- [Instalar Visual Studio Code](https://code.visualstudio.com/)
+
+- [Instalar Git](https://git-scm.com/downloads)
+
+- [Crear cuenta en github.com](https://github.com/)
+
+
+
+##
+
+::: {.columns .v-center-container}
+::: {.column width="40%"}
+
+![](images/logo-lisa.png)
+
+
+
+
+:::
+::: {.column width="60%"}
+
+El [Laboratorio de Investigación Social Abierta (LISA)]{.red} tiene por objetivo ofrecer herramientas y orientaciones para la apertura científica de las distintas etapas de los proyectos de investigación en ciencias sociales.
+
+:::
+:::
+
+<hr>
+[[lisacoes.com](https://lisacoes.com/)]{.content-box-red .center-container}
+
+## Nuestro equipo
+
+:::{=html}
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; justify-items: center; align-items: center;">
+
+<div style="text-align: center;">
+  <img src="images/jc.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;" />
+  <div>Juan Carlos Castillo</div>
+</div>
+
+<div style="text-align: center;">
+  <img src="images/kevin.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;" />
+  <div>Kevin Carrasco</div>
+</div>
+
+</div>
+:::
+
+:::{=html}
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; justify-items: center; align-items: center;">
+
+<div style="text-align: center;">
+  <img src="images/katherine.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;" />
+  <div>Katherine Aravena</div>
+</div>
+
+<div style="text-align: center;">
+  <img src="images/rene.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;" />
+  <div>René Canales</div>
+</div>
+
+<div style="text-align: center;">
+  <img src="images/tomas.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;" />
+  <div>Tomás Urzúa</div>
+</div>
+
+</div>
+
+:::
+
+
+
 
 {{< include modulo1.qmd >}}
 

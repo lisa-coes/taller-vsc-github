@@ -1,10 +1,11 @@
 ---
 format:
   revealjs:
-    theme: 
-           - taller-ciae.scss 
+    theme: taller-ciae.scss
     transition: slide
     transition-speed: slow
+    slide-number: true
+    show-slide-number: print
 editor: source  
 ---
 
