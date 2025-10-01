@@ -62,7 +62,9 @@ lang: es                          # Idioma del documento
 
 ## El cuerpo
 
-- En el cuerpo del documento figura el texto y los bloques de código que uno quiere incluir en el qmd.  
+- En el cuerpo del documento figura el texto y los bloques de código que uno quiere incluir en el qmd.
+- Enfasis con: *cursiva* y **negrita**
+- Listados con "-" y "1., 2., 3., etc." 
 
 ### R en Quarto
 
