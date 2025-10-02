@@ -79,8 +79,37 @@ Para insertar código en Quarto, utilizamos chunks que se delimitan con:
 
 ### Ejemplo práctico
 
-Aquí un ejemplo de uso de código:
+Aquí un ejemplo del uso del cuerpo y su integración de R:
 
+- Como ven, pueden hacer el listado. O con una lista numerada:
+  1. Tanto *en cursiva*
+  2. Como en **negrita**
+
+Y finalmente, pasamos a la parte del código:
+
+Primero tenemos las **chunk options**
+
+Los encabezados del chunk con label, echo, etc. se llaman "chunk options" o "opciones de chunk" en español.
+
+1. Chunk options (opciones de chunk) término más común
+2. Chunk headers (encabezados de chunk)
+3. Execution options (opciones de ejecución)
+4. Cell options (opciones de celda) - en contexto de notebooks
+
+### Opciones más comunes:
+
+| Opción | Función |
+|--------|---------|
+| `label` | Nombre único del chunk |
+| `echo` | Mostrar/ocultar código |
+| `eval` | Ejecutar/no ejecutar código |
+| `warning` | Mostrar/ocultar warnings |
+| `message` | Mostrar/ocultar mensajes |
+| `fig-cap` | Caption de figuras |
+| `fig-width` | Ancho de figuras |
+| `fig-height` | Alto de figuras |
+
+Y el resto del código se inserta tal como uno lo haría en RStudio
 ```{r}
 #| label: fig-ejemplo
 #| fig-cap: "Gráfico de ejemplo con datos ficticios"
@@ -122,7 +151,9 @@ ggplot(datos_ejemplo, aes(x = valor_x, y = valor_y, color = categoria)) +
   scale_size_continuous(range = c(1, 4))
 ```
 
+# ¿Tienes dudas? ¡Contáctanos!
 
+[Contacto Laboratorio de Investigación Social Abierta (LISA)](lisa-coes.com) 
 
 
 
