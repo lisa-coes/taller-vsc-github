@@ -11,6 +11,7 @@ affiliation: Laboratorio de Investigación Social Abierta
 date: today
 format: html
 lang: es
+toc: true
 ---
 
 # Bienvenidos/as a este tutorial de **Quarto**
