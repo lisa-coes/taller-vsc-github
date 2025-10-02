@@ -155,5 +155,8 @@ ggplot(datos_ejemplo, aes(x = valor_x, y = valor_y, color = categoria)) +
 
 [Contacto Laboratorio de Investigación Social Abierta (LISA)](lisa-coes.com) 
 
+Otros links de interés:
+- Github Education: https://github.com/education?locale=es-419
+- GIthub Copilot: https://github.com/features/copilot?locale=es-419
 
 
