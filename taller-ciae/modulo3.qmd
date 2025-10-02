@@ -28,9 +28,9 @@ Tomás Urzúa & René Canales
 
 
 
-{{< include m2-p1.qmd >}}
+{{< include m3-p1.qmd >}}
 
-{{< include m2-p2.qmd >}}
+{{< include m3-p2.qmd >}}
 
 
 

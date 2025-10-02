@@ -97,8 +97,51 @@ Kevin Carrasco
   
   - no esperar muchos cambios distintos que puedan hacer perder el sentido del commit
 
-## Repositorio
 
-[https://github.com/lisa-coes/taller-vsc-github/taller-ciae](https://github.com/lisa-coes/taller-vsc-github/taller-ciae)
+# {background-color="grey"}
 
-# Muchas gracias! 
+<span style="font-size:60px; color:white; font-weight:bold;">Herramientas computacionales para la investigación social reproducible</span>  
+
+
+**Talleres de Formación Interna - CIAE, jueves 02 de octubre de 2025**
+
+<hr>
+
+::: {.columns .v-center-container}
+::: {.column width="60%"}
+
+![](images/lisa.png){width="70%"}
+
+Laboratorio de Investigación Social Abierta 
+
+COES
+
+[lisacoes.com](https://lisacoes.com/)
+
+:::{=html}
+<div style="display: inline-flex; align-items: center; gap: 6px; line-height: 1;">
+  <img src="images/octocat.svg" 
+       alt="GitHub" style="width:36px; height:36px; vertical-align: middle;">
+  <a href="https://github.com/lisa-coes/taller-vsc-github/taller-ciae" target="_blank" style="vertical-align: middle; font-size: 1em;">
+    Repositorio de este taller
+  </a>
+</div>
+:::
+
+:::
+
+::: {.column width="30%"}
+
+**Juan Carlos Castillo**
+
+**Kevin Carrasco**
+
+**René Canales**
+
+**Katherine Aravena**
+
+**Tomás Urzúa**
+
+
+:::
+:::
