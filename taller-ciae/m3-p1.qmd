@@ -107,7 +107,7 @@ editor: source
 :::: {.columns}
 ::: {.column width="60%"}
 - Requisitos: Quarto CLI y Visual Studio Code (VSC)
-- Instalación de Quarto: `https://quarto.org/docs/get-started/`
+- Instalación de Quarto: [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
 - Verificación de instalación:
   ```bash
   quarto check
@@ -281,5 +281,6 @@ editor: source
 ## Recursos
 
 - Recursos para seguir aprendiendo:
-  - [https://quarto.org](https://quarto.org)
+- [https://quarto.org](https://quarto.org)
 - [Creación de documentos científicos con Quarto](https://aprendeconalf.es/quarto-textos-cientificos/)
+- [Tutorial Quarto for academics](https://youtu.be/EbAAmrB0luA)
