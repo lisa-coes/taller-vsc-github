@@ -16,7 +16,7 @@ toc: true
 
 # Bienvenidos/as a este tutorial de **Quarto**
 
-Como vimos en la presentación, [**Quarto**](https://quarto.org/) es un sistema moderno de creación de documentos dinámicos, informes, presentaciones, libros, sitios web y más, a partir de archivos de texto plano y por medio del conversor universal de documentos [**Pandoc**](https://pandoc.org/). Está especialmente diseñado para elaborar documentos científicos y técnicos reproducibles.
+Como vimos en la presentación, [**Quarto**](https://quarto.org/) es un sistema moderno de creación de documentos dinámicos, informes, presentaciones, libros, sitios web y más, a partir de archivos de texto plano (archivo digital que contiene únicamente caracteres de texto (letras, números y símbolos) sin ningún formato especial) y por medio del conversor universal de documentos [**Pandoc**](https://pandoc.org/). Está especialmente diseñado para elaborar documentos científicos y técnicos reproducibles.
 
 
 ¡Toda la evolución de los sistemas de autoría dentro del mismo documento!
