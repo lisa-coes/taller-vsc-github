@@ -1,10 +1,11 @@
 ---
 format:
   revealjs:
-    theme: 
-           - taller-ciae.scss 
+    theme: taller-ciae.scss
     transition: slide
     transition-speed: slow
+    slide-number: true
+    show-slide-number: print
 editor: source  
 ---
 
@@ -24,38 +25,6 @@ editor: source
 
 Juan Carlos Castillo
 
-
-##  Antes de comenzar
- 
-- [Instalar Visual Studio Code](https://code.visualstudio.com/)
-
-- [Instalar Git](https://git-scm.com/downloads)
-
-- [Crear cuenta en github.com](https://github.com/)
-
-- Dejar su nombre de usuario de Github en el chat
-
-
-##
-
-::: {.columns .v-center-container}
-::: {.column width="40%"}
-
-![](images/logo-lisa.png)
-
-
-
-
-:::
-::: {.column width="60%"}
-
-El [Laboratorio de Investigación Social Abierta (LISA)]{.red} tiene por objetivo ofrecer herramientas y orientaciones para la apertura científica de las distintas etapas de los proyectos de investigación en ciencias sociales.
-
-:::
-:::
-
-<hr>
-[[lisacoes.com](https://lisacoes.com/)]{.content-box-red .center-container}
 
 ## Ciencia abierta
 
@@ -122,48 +91,3 @@ Los equipos informaron tanto hallazgos numéricos como conclusiones sustanciales
 - Versionables (Git)
 - Repositorios abiertos (Github) 
 - [Organización de carpetas y archivos - IPO]
-
-
-## Algunas limitaciones de escritura con procesador de texto tradicional
-
-::: {.columns}
-::: {.column width="80%"}
-
-- Barrera de **pago/licencia** para acceder a contenidos (propiedad)
-
-- Difícil **versionamiento** y llevar registro de quién hizo qué cambio, barrera a la reproducibilidad y colaboración 
-
-- No permite un documento enteramente **reproducible** que combine texto y código de análisis (en caso de utilizarlo)
-
-:::
-::: {.column width="20%"}
-
-![](images/word.jpg)
-
-::: 
-:::
-
-## Propuesta: escritura libre y abierta
-
-::: {.columns}
-::: {.column width="60%"}
-
-
-- Independiente de programa comercial
-
-- Independiente de plataformas específicas
-
-- Permite combinar texto y análisis en un mismo documento
-
-- Foco en los contenidos en lugar del formato
-
-- Permite distintas opciones de formato final
-
-:::
-::: {.column width="40%"}
-
-![](images/quarto.png)
-![](images/vscode.png)
-
-::: 
-:::

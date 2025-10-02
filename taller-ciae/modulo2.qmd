@@ -1,35 +1,18 @@
 ---
 format:
   revealjs:
-    theme: lisa.scss
-    title-slide: false
-    width: 1100
-    height: 700
-    margin: 0.06
-    center: true
-    maxScale: 1
-    minScale: 0.2
-    transition: fade
+    theme: taller-ciae.scss
+    transition: slide
     transition-speed: slow
-    slideNumber: true
-    incremental: true
-    auto-stretch: false
+    slide-number: true
+    show-slide-number: print
+editor: source  
 body-classes: kathy   # <- aísla estilos SOLO para este QMD
 ---
 
 <!-- ===== CSS LOCAL Y AISLADO A ESTE QMD ===== -->
 <style>
-/* Tipografía base solo para este QMD */
-.kathy .reveal { font-size: 26px; line-height: 1.32; color:#111827; }
-
-/* H2 del tema: hacerlo más discreto para este QMD */
-.kathy .reveal .slides section h2{
-  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
-  line-height: 1.10;
-  margin-bottom: clamp(0.8rem, 1.6vw, 1.25rem);
-  letter-spacing: -0.2px;
-}
-.kathy .reveal .slides section > h2:first-child{ margin-top:-0.4rem; }
+.reveal { font-size: 34px; line-height: 1.32; color:#111827; }
 
 /* Utilidad para alinear una slide arriba */
 .kathy .align-top{
@@ -188,17 +171,21 @@ body-classes: kathy   # <- aísla estilos SOLO para este QMD
 
 # {background-color="black" .white}
 
-### Módulo 2: Introducción VS Code
+<br>
 
-**Katherine Aravena Herrera**  
+<p align="right">
+  <img src="images/lisa.png" width="15%">
+</p>
+<br>
+<br>
+<span style="font-size:60px; color:white; font-weight:bold;">Módulo 2: Introducción VS Code</span>
 
-Talleres de Formación Interna - CIAE, Jueves 02 de octubre de 2025
-
+<br>
 <hr>
 
-![](images/lisa.png){width="80%"}
 
-Laboratorio de Investigación Social Abierta - COES
+Katherine Aravena Herrera 
+
 
 # Introducción a Visual Studio Code {.cover-title}
 
@@ -246,7 +233,7 @@ Laboratorio de Investigación Social Abierta - COES
 ## Interfaz: visión general {data-transition="fade"}
 
 ::: columns
-::: column
+::: {.column .quick-mini}
 
 <ul>
   <li class="fragment" data-fragment-index="1"><strong>Barra de actividad</strong> (izquierda): Explorer, Search, Source Control, Run, Extensions.</li>
@@ -315,7 +302,7 @@ Laboratorio de Investigación Social Abierta - COES
 ## Para comenzar {.align-top}
 
 ::: columns
-::: {.column width="64%"}
+::: {.column width="64%" .quick-mini}
 
 ### Desde la interfaz
 - En la **barra de actividad** (izquierda), haz clic en **Explorer**.
@@ -347,7 +334,7 @@ Laboratorio de Investigación Social Abierta - COES
 ## Personalización rápida {.align-top data-incremental=false}
 
 ::: columns
-::: column
+::: {.column .quick-mini}
 
 ### VSC en español
 1) `Ctrl+Shift+P` → **Configure Display Language**  
@@ -355,7 +342,7 @@ Laboratorio de Investigación Social Abierta - COES
 3) Verifica la extensión **Spanish Language Pack** en Extensiones
 
 :::
-::: column
+::: {.column .quick-mini}
 
 ### Temas de color
 - Archivo → Preferencias → Temas → **Tema de color**
@@ -363,7 +350,7 @@ Laboratorio de Investigación Social Abierta - COES
 - Sugerencia: prueba **Light Modern** o instala otros temas del Marketplace
 
 :::
-::: column
+::: {.column .quick-mini}
 
 ### Áreas de trabajo
 - **Carpeta** única (recomendado para cursos): Archivo → Abrir carpeta…
@@ -371,7 +358,7 @@ Laboratorio de Investigación Social Abierta - COES
 - Nota: cada área puede tener su propia configuración en **.vscode/**
 
 :::
-::: column
+::: {.column .quick-mini}
 
 ### Extensiones
 - `Ctrl+Shift+X` → buscar → **Instalar**
@@ -382,7 +369,7 @@ Laboratorio de Investigación Social Abierta - COES
 
 ## Más información {#mas-info}
 
-::: {.mb-3}
+::: {.mb-3 .quick-mini}
 [VS Code Essentials](https://microsoft.github.io/vscode-essentials/en/notice.html){.btn .btn-primary .btn-sm target=_blank rel="noopener"}
 [Manuales mclibre.org](https://www.mclibre.org/consultar/informatica/index.html){.btn .btn-outline-secondary .btn-sm target=_blank rel="noopener"}
 [Documentación oficial VS Code](https://code.visualstudio.com/docs){.btn .btn-outline-secondary .btn-sm target=_blank rel="noopener"}

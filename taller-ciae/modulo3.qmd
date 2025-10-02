@@ -1,26 +1,30 @@
 ---
 format:
   revealjs:
-    theme: 
-           - taller-ciae.scss 
+    theme: taller-ciae.scss
     transition: slide
     transition-speed: slow
+    slide-number: true
+    show-slide-number: print
 editor: source  
 ---
 
 # {background-color="black" .white}
 
-### Módulo 2: Documentos y presentaciones en Quarto 
+<br>
 
-Tomás Urzúa & René Canales 
+<p align="right">
+  <img src="images/lisa.png" width="15%">
+</p>
+<br>
+<br>
+<span style="font-size:60px; color:white; font-weight:bold;">Módulo 3: Documentos y presentaciones en Quarto</span>
 
-Talleres de formación interna CIAE, 02 de octubre de 2025
-
+<br>
 <hr>
 
-![](images/lisa.png){width="80%"}
 
-Laboratorio de Investigación Social Abierta - COES
+Tomás Urzúa & René Canales 
 
 
 

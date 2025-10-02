@@ -1,10 +1,11 @@
 ---
 format:
   revealjs:
-    theme: 
-           - taller-ciae.scss 
+    theme: taller-ciae.scss
     transition: slide
     transition-speed: slow
+    slide-number: true
+    show-slide-number: print
 editor: source  
 ---
 
@@ -137,8 +138,3 @@ Cambiar el color de las letras de una slide, del background y por último jugar 
 
 - [Página LISA](https://lisa-coes.netlify.app/) y más sobre Ciencia Abierta
 
-## Repositorio
-
-[https://github.com/lisa-coes/taller-vsc-github](https://github.com/lisa-coes/taller-vsc-github)
-
-# Muchas gracias! 

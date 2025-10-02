@@ -19,6 +19,8 @@ $heading4Size: 1.00em;
 // code blocks
 $code-block-border-color: #93a1a1 !default;
 
+
+
 /* ======= Hotspots sobre imagen para anotaciones paso a paso ======= */
 .ui-annot {
   position: relative;
@@ -161,3 +163,20 @@ $code-block-border-color: #93a1a1 !default;
 .ui-annot--sm .hotspot { border-width: 2.5px; }
 .ui-annot--sm .hotspot::after { font-size: clamp(0.56rem, 1.1vw, 0.8rem); padding:.12rem .36rem; }
 
+/* Forzar número de slide RevealJS */
+.reveal .slide-number,
+.reveal .slide-number-a11y {
+  display: block !important;
+  opacity: 1 !important;
+  color: #211e1e !important;   /* mismo color que body-color */
+  font-size: 0.8em;
+  right: 1.2em;
+  bottom: 1.2em;
+}
+
+.img-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}

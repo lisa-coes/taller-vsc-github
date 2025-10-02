@@ -1,26 +1,31 @@
 ---
 format:
   revealjs:
-    theme: 
-           - taller-ciae.scss 
+    theme: taller-ciae.scss
     transition: slide
     transition-speed: slow
+    slide-number: true
+    show-slide-number: print
 editor: source  
 ---
 
 # {background-color="black" .white}
 
-### Módulo 4: Git y Github
+<br>
+
+<p align="right">
+  <img src="images/lisa.png" width="15%">
+</p>
+<br>
+<br>
+<span style="font-size:60px; color:white; font-weight:bold;">Módulo 4: Git y Github</span>
+
+<br>
+<hr>
+
 
 Kevin Carrasco
 
-Talleres de Formación Interna - CIAE, Jueves 02 de octubre de 2025
-
-<hr>
-
-![](images/lisa.png){width="80%"}
-
-Laboratorio de Investigación Social Abierta - COES
 
 # Repositorios y apertura {data-background-color="black"}
 
@@ -92,3 +97,8 @@ Laboratorio de Investigación Social Abierta - COES
   
   - no esperar muchos cambios distintos que puedan hacer perder el sentido del commit
 
+## Repositorio
+
+[https://github.com/lisa-coes/taller-vsc-github/taller-ciae](https://github.com/lisa-coes/taller-vsc-github/taller-ciae)
+
+# Muchas gracias! 
