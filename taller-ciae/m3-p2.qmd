@@ -116,7 +116,7 @@ Cambiar el color de las letras de una slide, del background y por último jugar 
 {.incremental .highlight-last style="font-size: 45px"}
 :::
 
-## Palabras de cierre
+## Resumen
 
 :::{.incremental style="font-size: 35px"}
 - Quarto es ideal para generar documentos divulgativos, sobre todo aquellos que mezclan **texto y código**

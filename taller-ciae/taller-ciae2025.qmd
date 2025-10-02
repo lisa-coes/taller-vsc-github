@@ -23,25 +23,35 @@ editor: source
 
 ![](images/lisa.png){width="70%"}
 
-Laboratorio de Investigación Social Abierta
+Laboratorio de Investigación Social Abierta 
 
 COES
 
 [lisacoes.com](https://lisacoes.com/)
 
+:::{=html}
+<div style="display: inline-flex; align-items: center; gap: 6px; line-height: 1;">
+  <img src="images/octocat.svg" 
+       alt="GitHub" style="width:36px; height:36px; vertical-align: middle;">
+  <a href="https://github.com/lisa-coes/taller-vsc-github/taller-ciae" target="_blank" style="vertical-align: middle; font-size: 1em;">
+    Repositorio de este taller
+  </a>
+</div>
+:::
+
 :::
 
 ::: {.column width="30%"}
 
-Juan Carlos Castillo
+**Juan Carlos Castillo**
 
-Kevin Carrasco
+**Kevin Carrasco**
 
-René Canales
+**René Canales**
 
-Katherine Aravena
+**Katherine Aravena**
 
-Tomás Urzúa
+**Tomás Urzúa**
 
 
 :::
