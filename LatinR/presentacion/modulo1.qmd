@@ -1,0 +1,93 @@
+---
+format:
+  revealjs:
+    theme: taller-ciae.scss
+    transition: slide
+    transition-speed: slow
+    slide-number: true
+    show-slide-number: print
+editor: source  
+---
+
+# {background-color="black" .white}
+
+<br>
+
+<p align="right">
+  <img src="images/lisa.png" width="15%">
+</p>
+<br>
+<br>
+<span style="font-size:60px; color:white; font-weight:bold;">Módulo 1: Reproducibilidad en la investigación social</span>
+
+<br>
+<hr>
+
+Juan Carlos Castillo
+
+
+## Ciencia abierta
+
+![](images/flujo-herramientas.png)
+
+
+## Reproducibilidad
+
+- Es la posibilidad de **regenerar** de manera independiente los resultados usando los materiales originales de una investigación ya publicada.
+
+- En términos simples: obtener los mismos resultados de una investigación utilizando los mismos datos.
+
+## ¿Qué porcentaje de los estudios publicados son reproducibles?
+
+::: {.columns}
+::: {.column width="80%"}
+
+![](images/reproducibility_science.png)
+
+:::
+::: {.column width="20%"}
+
+Alrededor de un **40%!** dependiendo de la disciplina
+:::
+:::
+
+## ¿Hay crisis de reproducibilidad?
+
+::: {.columns}
+::: {.column width="80%"}
+
+![](images/nature-reproducibility-crisis.jpeg){width="70%"}
+
+
+
+:::
+::: {.column width="20%"}
+
+Fuente: [Baker (2016) 1,500 scientists lift the lid on reproducibility - Nature](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)
+:::
+:::
+##
+### ¿y en la práctica cómo afecta la reproducibilidad?
+
+::: {.columns}
+::: {.column width="60%"}
+![](images/breznau.png){width="100%"}
+
+:::
+::: {.column width="40%"}
+
+Breznau, et. al, (2023) coordinó una investigación con 161 investigadores de 73 equipos de investigación.
+
+Los equipos informaron tanto hallazgos numéricos como conclusiones sustanciales muy diversas
+:::
+:::
+
+
+## Elementos de la investigación reproducible 
+
+- Trabajo en editor de texto (VSC)
+- Escritura en texto plano (Markdown)
+- Documentos y presentaciones abiertas y dinámicas (Quarto) 
+- Versionables (Git)
+- Repositorios abiertos (Github) 
+- [Organización de carpetas y archivos - IPO]
