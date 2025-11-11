@@ -7,142 +7,390 @@ format:
     slide-number: true
     show-slide-number: print
 editor: source  
-body-classes: kathy   # <- aísla estilos SOLO para este QMD
+body-classes: kathy  
 ---
 
-# René
-<!-- === === --
 
-## ¿Qué es VS Code? {.align-top}
+<!-- ===== CSS LOCAL Y AISLADO A ESTE QMD ===== -->
+<style>
+.reveal { font-size: 34px; line-height: 1.32; color:#111827; }
 
-::: columns
-::: column
+/* Utilidad para alinear una slide arriba */
+.kathy .align-top{
+  display:flex !important; flex-direction:column; justify-content:flex-start;
+}
 
-- Editor de código **gratuito, liviano y extensible**.
-- Multilenguaje: **R, Python, Quarto, LaTeX, HTML/CSS/JS**.
-- Integra **Terminal**, **Git**, **Depuración** y **Extensiones**.
-- Ideal para **flujos reproducibles** con **Git/GitHub** y **Quarto**.
+/* Tarjeta del objetivo */
+.kathy .objective-card{
+  border-left:6px solid #D91A2A; background:rgba(217,26,42,.08);
+  border-radius:12px; padding:14px 16px; box-shadow:0 6px 18px rgba(17,24,39,.06);
+}
 
+/* Columna con mapa de iconos (más compacta) */
+.kathy .icon-map{ font-size:.94em; line-height:1.28; }
+.kathy .icon-map ul{ list-style:none; margin:0; padding:0; }
+.kathy .icon-map li{ padding:.42rem .2rem .55rem; border-top:1px solid rgba(17,24,39,.10); }
+.kathy .icon-map li:first-child{ border-top:0; }
+.kathy .icon-map li > strong:first-child{ color:#D91A2A; font-weight:800; letter-spacing:.2px; }
+.kathy .icon-map code{
+  font-size:.88em; background:#F3F4F6; border:1px solid #E5E7EB; padding:.06em .35em; border-radius:6px;
+}
+
+/* Bloque de atajos pequeño */
+.kathy .quick-mini{ font-size:.92em; line-height:1.26; }
+.kathy .quick-mini li{ margin:.26rem 0; }
+.kathy .quick-mini code{ font-size:.9em; }
+
+/* Anotaciones (hotspots) sobre imagen */
+.kathy .ui-annot{ position:relative; width:100%; }
+.kathy .ui-annot .ui-img{ display:block; width:100%; height:auto; border-radius:10px; }
+.kathy .hotspot{
+  position:absolute; border:3px solid #D91A2A; border-radius:12px;
+  background:rgba(217,26,42,.10); box-shadow:0 8px 24px rgba(0,0,0,.18);
+  pointer-events:none; opacity:0; visibility:hidden; transition:opacity .18s ease;
+}
+.kathy .hotspot::after{
+  content:attr(data-label); position:absolute; top:6px; left:8px;
+  display:inline-block; padding:.14rem .45rem; font-weight:800; line-height:1;
+  background:#fff; color:#111827; border:2px solid #D91A2A; border-radius:999px;
+  box-shadow:0 4px 10px rgba(0,0,0,.08); font-size:clamp(0.62rem,1.3vw,0.9rem);
+}
+.kathy .reveal .fragment.visible.hotspot{ opacity:1; visibility:visible; }
+
+/* Imagen barra vertical: sombra y límite de altura */
+.kathy img[alt="Barra de actividad VS Code"]{
+  display:block; margin:.2rem auto 0; border-radius:12px;
+  box-shadow:0 8px 22px rgba(0,0,0,.12); max-height:70vh;
+}
+
+/* ===== Botones (scope: solo este QMD) ===== */
+.kathy .btn{
+  display:inline-flex; align-items:center; gap:.45rem;
+  padding:.38rem .80rem;
+  border:2px solid transparent; border-radius:10px;
+  font-weight:700; letter-spacing:.01em; line-height:1;
+  text-decoration:none !important; cursor:pointer;
+  transition:transform .12s ease, box-shadow .12s ease,
+             background .2s ease, border-color .2s ease, color .2s ease;
+  box-shadow:0 3px 8px rgba(17,24,39,.06);
+  color:inherit;
+}
+.kathy .btn:hover{ transform:translateY(-1px); }
+.kathy .btn:active{ transform:translateY(0); }
+.kathy .btn:focus{ outline:0; box-shadow:0 0 0 3px rgba(217,26,42,.25); }
+
+/* Tamaño pequeño */
+.kathy .btn-sm{ padding:.30rem .68rem; font-size:.90em; border-radius:9px; }
+
+/* Variantes */
+.kathy .btn-primary{
+  background:#D91A2A; border-color:#D91A2A; color:#fff !important;
+}
+.kathy .btn-primary:hover{
+  background:#b51622; border-color:#b51622; color:#fff !important;
+}
+.kathy .btn-outline-secondary{
+  background:transparent; border-color:#E5E7EB; color:#111827 !important;
+}
+.kathy .btn-outline-secondary:hover{
+  background:#F3F4F6; border-color:#D1D5DB;
+}
+
+/* Espaciado cuando hay varios botones seguidos */
+.kathy .mb-3 .btn{ margin-right:.35rem; }
+
+/* ===== Tarjeta (card) mínima para la imagen y texto ===== */
+.kathy .card{
+  border:1px solid #E5E7EB; background:#fff; border-radius:14px; overflow:hidden;
+}
+.kathy .shadow-sm{ box-shadow:0 8px 22px rgba(17,24,39,.08); }
+.kathy .card-img-top{ display:block; width:100%; height:auto; }
+.kathy .card .card-body{ padding:.8rem 1rem; }
+
+/* ===== Centrar los H2 de cada slide (título principal) ===== */
+.kathy .reveal .slides section > h2:first-child{
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Si usas .align-top, sigue arriba pero centrado */
+.kathy .reveal .slides section.align-top > h2:first-child{
+  text-align: center;
+}
+
+.kathy .icon-map.icon-xs{
+  font-size: clamp(0.98rem, 1.22vw, 1.10rem); /* antes máx 0.98 → ahora 1.10 */
+  line-height: 1.26;
+}
+.kathy .icon-map.icon-xs li{
+  padding: .30rem .12rem .36rem;
+}
+.kathy .icon-map.icon-xs code{
+  font-size: .92em;
+}
+
+/* Pantallas de poca altura: aún grande pero sin desbordar */
+@media (max-height: 760px){
+  .kathy .icon-map.icon-xs{
+    font-size: clamp(0.92rem, 1.15vw, 1.04rem);
+    line-height: 1.24;
+  }
+}
+
+/* ===== Quick mini (columna derecha) — versión compacta “como antes” ===== */
+.kathy .quick-mini{
+  font-size: 0.80em;        /* antes solía ser ~0.74–0.92; elegimos un punto medio cómodo */
+  line-height: 1.26;
+}
+.kathy .quick-mini h3,
+.kathy .quick-mini h4{
+  margin-top: 0;
+  margin-bottom: .45rem;
+  font-weight: 800;
+  font-size: 1.05em;        /* título un poco más chico que el resto de la slide */
+  text-align: left;         /* no heredamos centrado de h2 */
+}
+.kathy .quick-mini ul{ margin: 0; padding-left: 1rem; }
+.kathy .quick-mini li{ margin: .26rem 0; }
+.kathy .quick-mini code{
+  font-size: .90em;
+  background: #F3F4F6;
+  border: 1px solid #E5E7EB;
+  padding: .02em .32em;
+  border-radius: 6px;
+}
+
+/* Ajuste si la pantalla tiene poca altura: aún más compacto */
+@media (max-height: 760px){
+  .kathy .quick-mini{ font-size: 0.78em; line-height: 1.24; }
+}
+
+
+</style>
+
+# ANÁLISIS REPRODUCIBLES {background-color="#2C3E50"}
+
+## ¿Qué son los Análisis Reproducibles?
+
+:::: {.columns}
+::: {.column width="50%"}
+**Definición**
+
+Permitir que otros puedan regenerar de manera independiente los resultados usando los materiales originales.
 :::
 
-::: column
+::: {.column width="50%"}
+**El Problema**
 
-![](imagenes/vscode1.jpg){fig-alt="Logo de Visual Studio Code" width="85%" style="border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.18);"}
+¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales? 
 
+Esto hace **imposible** acceder a los procedimientos que generaron sus resultados.
 :::
-:::
+::::
 
+## Los 4 Pasos de LISA
 
-## Algunas limitaciones de escritura con procesador de texto tradicional
-
-::: {.columns}
-::: {.column width="80%"}
-
-- Barrera de **pago/licencia** para acceder a contenidos (propiedad)
-
-- Difícil **versionamiento** y llevar registro de quién hizo qué cambio, barrera a la reproducibilidad y colaboración 
-
-- No permite un documento enteramente **reproducible** que combine texto y código de análisis (en caso de utilizarlo)
-
-:::
-::: {.column width="20%"}
-
-![](images/word.jpg)
-
-::: 
+::: {.incremental}
+1. **Estructura del proyecto** - Protocolo IPO
+2. **Prácticas de código** - Estándares mínimos
+3. **Documentos dinámicos** - Quarto y similares
+4. **Control de versiones** - Git y GitHub
 :::
 
-## Propuesta: escritura libre y abierta
+## Paso 1: Estructura del Proyecto {.smaller}
 
-::: {.columns}
+**Protocolo IPO:** Input, Procesamiento y Output
+
+::: {.incremental}
+- **Carpeta raíz**: documentar y orientar
+  - Archivo README que explique la estructura
+  
+- **Datos**: separar originales de procesados
+  - Documentar claramente de dónde provienen
+  - Explicar cómo acceder a ellos
+  
+- **Procesamiento**: scripts organizados
+  
+- **Output**: resultados finales
+:::
+
+## Paso 2: Prácticas de Código
+
+Estándares mínimos para facilitar la comprensión:
+
+::: {.incremental}
+- **Comentarios explicativos** - ¿Qué hace este código?
+- **Buena indentación** - Estructura visual clara
+- **Nombres claros de objetos** - `datos_limpios` > `df2`
+- **Organización lógica** - Un flujo que otros puedan seguir
+:::
+
+## Paso 3: Documentos Dinámicos
+
+### Herramientas como Quarto
+
+Lo mejor de dos mundos:
+
+:::: {.columns}
+::: {.column width="50%"}
+**Texto plano**
+
+Independiente de software comercial
+:::
+
+::: {.column width="50%"}
+**Código integrado**
+
+Todo se genera en el mismo documento
+:::
+::::
+
+::: {.fragment}
+**Ventaja clave:** No necesitamos importar tablas o gráficos externos; todo es autocontenido.
+:::
+
+## Paso 4: Control de Versiones
+
+### Git y GitHub
+
+::: {.incremental}
+- **Git** registra:
+  - ¿**Qué** cambió?
+  - ¿**Quién** lo cambió?
+  - ¿**Cuándo** se cambió?
+  
+- **GitHub** permite:
+  - Hospedar proyectos públicamente
+  - Colaboración en equipo
+  - Fundamental para grandes equipos
+:::
+
+# PUBLICACIONES LIBRES {background-color="#16A085"}
+
+## ¿Qué son las Publicaciones Libres?
+
+**Dar acceso libre a los resultados de la investigación**
+
+::: {.fragment}
+### El Problema
+
+La publicación científica es clave para dar a conocer resultados, pero a menudo encontramos **barreras de acceso al conocimiento**.
+:::
+
+::: {.fragment}
+### La Solución
+
+El movimiento **Open Access** busca promover el acceso libre a la producción científica sin restricciones de copyright.
+:::
+
+## Las 5 Rutas del Open Access {.smaller}
+
+::: {.incremental}
+1. **Dorada** - Publicación gratuita para el lector
+2. **Verde** - Auto-archivo en repositorios
+3. **Híbrida** - Combina acceso libre y restringido
+4. **Diamante** - Completamente libre y gratuita
+5. **Bronce** - Acceso sin licencias claras
+:::
+
+::: {.fragment}
+**Importante:** Conocer la política OA de la revista donde queremos publicar
+:::
+
+## Etapas del Artículo
+
+::: {.incremental}
+1. **Pre-print** 
+   - Borrador antes de revisión por pares
+   
+2. **Post-print** 
+   - Aceptado tras revisión
+   - Sin formato final de la revista
+   
+3. **Print** 
+   - Versión publicada final
+:::
+
+## Publicar según la Etapa
+
+### Recomendación LISA para Pre-prints
+
+:::: {.columns}
 ::: {.column width="60%"}
+**SocArxiv**
 
-
-- Independiente de programa comercial
-
-- Independiente de plataformas específicas
-
-- Permite combinar texto y análisis en un mismo documento
-
-- Foco en los contenidos en lugar del formato
-
-- Permite distintas opciones de formato final
-
+- Obtén un DOI
+- Hace tu documento citable
+- No afecta la posterior indexación en revistas
 :::
+
 ::: {.column width="40%"}
+:::
+::::
 
-![](images/quarto.png)
-![](images/vscode.png)
+# OFERTA FORMATIVA DE LISA {background-color="#8E44AD"}
 
-::: 
+## Los 4 Componentes de LISA
+
+::: {.incremental}
+1. **Diseño Transparente** - con preregistros
+2. **Datos Abiertos** - con protocolos de documentación
+3. **Análisis Reproducibles** - estructura, código, documentos dinámicos y control de versiones
+4. **Publicaciones Libres** - orientación sobre Open Access
 :::
 
+## Recursos Disponibles
 
+Todo esto acompañado de:
 
-## ¿Qué es markdown?
-
-- Forma de escritura simple con pocas marcas de formato
-
-- Conversión a distintos formatos de salida (html, pdf)
-
-- Soporta encabezados, tablas, imágenes, tablas de contenidos, ecuaciones, links...
-
-- Filosofía: foco en contenido primero, el formato después.
-
-## ¿Qué es Quarto?
-
-- [Quarto](https://quarto.org/) es un sistema moderno de creación de documentos dinámicos, informes, presentaciones, libros, sitios web y más, a partir de archivos de texto plano y por medio del conversor universal de documentos [Pandoc](https://pandoc.org/).
-
-- Evolución de los sistemas de autoría como Jupyter, R Markdown, todo dentro del mismo documento. 
-
-
-
-
-## {data-background-color="black"}
-
-### La escritura en texto simple (como Markdown o Quarto) permite implementar un sistema de control de versiones, además de herramientas de respaldo, colaboración y comunicación
-
-
-## Git
-
-::: {.columns}
-::: {.column width="40%"}
-![](images/git.png)
+::: {.incremental}
+- **Tutoriales** paso a paso
+- **Blogs** explicativos
+- **Videos** didácticos
+- **Talleres** como el de hoy
 :::
 
-::: {.column width="60%"}
-- es una especie de memoria o registro local que guarda información sobre:
-
-  - quién hizo un cambio
-  - cuándo lo hizo
-  - qué hizo
-
-- mantiene la información de todos los cambios en la historia de la carpeta / repositorio local
-
-- se puede sincronizar con un repositorio remoto (ej. Github)
-:::
+::: {.fragment}
+Diseñados específicamente para la **comunidad de ciencias sociales de habla hispana**.
 :::
 
-## Git/github
+## ¡Visítanos!
 
-- actualmente, Git / Github posee más de 100 millones de repositorios
+### [lisacoes.com](https://lisacoes.com)
 
-- mayor fuente de código en el mundo
+Encontrarás:
 
-- ha transitado desde el mundo de desarrollo de software hacia distintos ámbitos de trabajo colaborativo y abierto
+- Guías paso a paso
+- Ejemplos prácticos
+- Repositorio de GitHub con materiales
+- Comunidad activa
 
-- entorno de trabajo que favorece la ciencia abierta
+::: {.fragment}
+### LISA es más que herramientas técnicas
 
+Es una **inciativa comprometida** con hacer la ciencia social más transparente, accesible y robusta.
+:::
 
-=== -->
+## ¡Gracias! {background-color="#2C3E50"}
 
-## Sitio web
+:::: {.columns}
+::: {.column width="50%"}
+### Contacto
 
-```{=html}
-<iframe src="https://lisacoes.netlify.app/" width="2000" height="1000"></iframe>
+[lisacoes.com](https://lisacoes.com)
 
-```
-## {.title-slide #portadafinal data-background-image="imagenes/parallax.jpg" data-background-size="cover" data-background-position="center" data-background-opacity="0.80"}
+contacto@lisacoes.com
 
-<div class="cover">
-  <img src="imagenes/LISA2.png" class="cover-logo" alt="LISA" />
+GitHub: lisa-coes
+:::
+
+::: {.column width="50%"}
+### Preguntas
+
+¿Dudas? ¿Comentarios?
+
+¡Conversemos!
+:::
+::::
