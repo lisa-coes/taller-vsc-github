@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="modulo1_files/libs/clipboard/clipboard.min.js"></script>
-<script src="modulo1_files/libs/quarto-html/tabby.min.js"></script>
-<script src="modulo1_files/libs/quarto-html/popper.min.js"></script>
-<script src="modulo1_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="modulo1_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="modulo1_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="modulo1_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="LatinR_files/libs/clipboard/clipboard.min.js"></script>
+<script src="LatinR_files/libs/quarto-html/tabby.min.js"></script>
+<script src="LatinR_files/libs/quarto-html/popper.min.js"></script>
+<script src="LatinR_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="LatinR_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="LatinR_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="LatinR_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.24">
 
-  <title>modulo1</title>
+  <title>latinr</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="modulo1_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="modulo1_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="LatinR_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="LatinR_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,11 +28,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="modulo1_files/libs/revealjs/dist/theme/quarto-bee238223668e23dfeddccef6a3ec67f.css">
-  <link href="modulo1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="modulo1_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="modulo1_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="modulo1_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="LatinR_files/libs/revealjs/dist/theme/quarto-bee238223668e23dfeddccef6a3ec67f.css">
+  <link href="LatinR_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="LatinR_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="LatinR_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="LatinR_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -126,8 +126,82 @@
     <div class="slides">
 
 
-<section class="slide level2">
-
+<section id="portada" class="slide level2 title-slide center" data-background-image="imagenes/parallax.jpg" data-background-size="cover" data-background-position="center" data-background-opacity="0.80">
+<h2></h2>
+<div class="cover">
+<p><img src="imagenes/LISA1.png" class="cover-logo" alt="LISA"></p>
+<p><span class="cover-kicker">HERRAMIENTAS COMPUTACIONALES PARA LA INVESTIGACIÓN SOCIAL REPRODUCIBLE</span></p>
+<h1 class="cover-title">
+Laboratorio de Investigación Social Abierta
+</h1>
+<div class="{=html}">
+<div class="cover-pill">
+<div class="line-1">
+<a href="https://lisacoes.com/">lisacoes.com</a>
+</div>
+<div class="line-2">
+LatinR 2025 · Departamento de Sociología, Universidad de Chile
+</div>
+</div>
+</div>
+<div class="cover-meta">
+Santiago, 17 de noviembre de 2025
+</div>
+<p><a class="btn" href="https://github.com/lisa-coes" target="_blank" rel="noopener"> <span class="gh" aria-hidden="true"></span> Repositorio en GitHub </a></p>
+</div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="columns v-center-container">
+<div class="column" style="width:40%;">
+<p><img data-src="images/logo-lisa.png"></p>
+</div><div class="column" style="width:60%;">
+<p>El <span class="red">Laboratorio de Investigación Social Abierta (LISA)</span> es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la <em>comunidad científica</em> y la <em>ciudadanía</em>.</p>
+</div></div>
+<p>En esa línea, tiene por objetivo ofrecer <em>herramientas</em> y <em>orientaciones</em> para la apertura científica de las distintas etapas de los <strong>proyectos de investigación</strong> en <em>ciencias sociales</em>.</p>
+<hr>
+<p><span class="content-box-red center-container"><a href="https://lisacoes.com/">lisacoes.com</a></span></p>
+</section>
+<section id="nuestro-equipo" class="slide level2">
+<h2>Nuestro equipo</h2>
+<div class="{=html}">
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; justify-items: center; align-items: center;">
+<div style="text-align: center;">
+<img src="images/jc.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+<div>
+Juan Carlos Castillo
+</div>
+</div>
+<div style="text-align: center;">
+<img src="images/kevin.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+<div>
+Kevin Carrasco
+</div>
+</div>
+</div>
+</div>
+<div class="{=html}">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; justify-items: center; align-items: center;">
+<div style="text-align: center;">
+<img src="images/katherine.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+<div>
+Katherine Aravena
+</div>
+</div>
+<div style="text-align: center;">
+<img src="images/rene.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+<div>
+René Canales
+</div>
+</div>
+<div style="text-align: center;">
+<img src="images/tomas.png" style="width:200px; height:200px; border-radius:50%; object-fit:cover;">
+<div>
+Tomás Urzúa
+</div>
+</div>
+</div>
+</div>
 <!-- ===== CSS LOCAL Y AISLADO A ESTE QMD ===== -->
 <style>
 .reveal { font-size: 34px; line-height: 1.32; color:#111827; }
@@ -296,98 +370,357 @@
 
 <img data-src="images/transparente.png" style="width:70.0%" class="r-stretch"></section>
 
-<section id="el-problema-estructural" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
-<h2>El problema estructural</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<span class="kicker">Transparentar las decisiones metodológicas</span>
-<div class="panel">
-<p>En <strong>ciencias sociales</strong> convivimos con incentivos y presiones por resultados relevantes (rechazar <span class="math inline">\(H_0\)</span>). Esto da paso a practicas como <em>p-hacking, HARKing (hipótesis post-hoc), reporte selectivo.</em></p>
-<p>Estos problemas erosionan:</p>
-<ul>
-<li>
-<strong>Validez</strong>: más <strong>falsos positivos</strong> y <strong>efectos inflados</strong>.
-</li>
-<li>
-<strong>Acumulación</strong>: resultados que no se <strong>replican</strong> ni se <strong>integran</strong>.
-</li>
-<li>
-<strong>Confianza pública</strong>: decisiones de política con base frágil.
-</li>
-<li>
-<strong>Avance del conocimiento</strong>: solo conocemos lo que “resulta”.
-</li>
-</ul>
-</div>
-</div><div class="column" style="width:45%;">
-<p><img data-src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Cuaderno y laptop: del diseño al código auditable"> <img data-src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="Equipo analizando resultados: escrutinio y trazabilidad"></p>
-</div></div>
-</section>
-<section id="por-qué-el-preregistro-es-central-en-ciencia-abierta" class="slide level2 compact-slide" style="font-size:0.75em; line-height:1.05;">
-<h2>¿Por qué el preregistro es central en ciencia abierta?</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<span class="kicker">¿Qué es un preregistro?</span>
-<div class="panel">
-<p>Documento fechado que <strong>fija</strong> el diseño <strong>antes</strong> de recolectar y analizar datos. Incluye hipótesis, plan de recolección y plan de análisis.</p>
-<p>No se trata de rigidez burocrática, sino de <strong>hacer auditable</strong> la secuencia lógica del estudio: <strong>teoría → diseño → datos → análisis</strong>.</p>
-<p>El preregistro diferencia lo <strong>confirmatorio</strong> (compromisos previos) de lo <strong>exploratorio</strong> (descubrimiento honesto). Explorar sigue permitido; lo que cambia es <strong>cómo lo reportamos</strong>.</p>
-</div>
-<div class="mt-3">
-<div class="callout callout-none no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><strong>Idea fuerza:</strong> La ciencia abierta no es “mostrar todo por mostrar”; es <em>hacer controlables</em> las decisiones que llevan del dato a la conclusión.</p>
-</div>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:40%;">
-<p><img data-src="imagenes/pre.png" style="width:100.0%" alt="Repositorio y control de versiones"> <img data-src="https://www.science.org/do/10.1126/science.z4say23/full/_20240712_wl-1721325611733.jpg" class="mt-3" style="width:100.0%" alt="Coordinación de equipo y trazabilidad de decisiones"></p>
-</div></div>
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
-
-<img data-src="https://lisacoes.com/componentes/a-dise%C3%B1o/lisa-transparency.gif" style="width:70.0%" alt="LISA transparency" class="r-stretch"></section>
 <section id="datos-abiertos" class="title-slide slide level1 center" style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;">
 <h1>Datos Abiertos</h1>
 
 <img data-src="images/datos.png" style="width:70.0%" class="r-stretch"></section>
 
-<section id="por-qué-y-qué-incluir" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
-<h2>¿Por qué y qué incluir?</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<span class="kicker">Ciencia abierta y reutilización</span>
-<div class="panel">
-<p>Abrir datos es <strong>hacer verificable y reutilizable</strong> el trabajo. Esto permite <strong>replicar</strong>, <strong>acumular</strong> evidencia y <strong>ahorra costos</strong> en nuevas investigaciones.</p>
-<p><strong>Incluye:</strong></p>
-<ul>
-<li>
-<strong>Base de datos</strong>
-</li>
-<li>
-<strong>Cuestionario</strong>
-</li>
-<li>
-<strong>Libro de códigos</strong>
-</li>
-<li>
-<strong>Ficha técnica</strong>
-</li>
-</ul>
-<p><strong>Principios guía:</strong> FAIR (Findable, Accessible, Interoperable, Reusable) junto al uso de <strong>licencia</strong> y <strong>anonimización</strong>.</p>
-</div>
-</div><div class="column" style="width:45%;">
-<p><img data-src="https://www.science.org/do/10.1126/science.zyyid5c/full/_20240416_car_open-databases-1713277480687.jpg" style="width:100.0%" alt="Repositorio con control de versiones"> <img data-src="https://fredvbrug.github.io/images/OA.jpg" class="mt-3" style="width:100.0%" alt="Citación y trazabilidad con DOI"></p>
-</div></div>
+<section>
+<section id="rené" class="title-slide slide level1 center">
+<h1>René</h1>
+<!-- === === --
+
+## ¿Qué es VS Code? {.align-top}
+
+::: columns
+::: column
+
+- Editor de código **gratuito, liviano y extensible**.
+- Multilenguaje: **R, Python, Quarto, LaTeX, HTML/CSS/JS**.
+- Integra **Terminal**, **Git**, **Depuración** y **Extensiones**.
+- Ideal para **flujos reproducibles** con **Git/GitHub** y **Quarto**.
+
+:::
+
+::: column
+
+![](imagenes/vscode1.jpg){fig-alt="Logo de Visual Studio Code" width="85%" style="border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.18);"}
+
+:::
+:::
+
+
+## Algunas limitaciones de escritura con procesador de texto tradicional
+
+::: {.columns}
+::: {.column width="80%"}
+
+- Barrera de **pago/licencia** para acceder a contenidos (propiedad)
+
+- Difícil **versionamiento** y llevar registro de quién hizo qué cambio, barrera a la reproducibilidad y colaboración 
+
+- No permite un documento enteramente **reproducible** que combine texto y código de análisis (en caso de utilizarlo)
+
+:::
+::: {.column width="20%"}
+
+![](images/word.jpg)
+
+::: 
+:::
+
+## Propuesta: escritura libre y abierta
+
+::: {.columns}
+::: {.column width="60%"}
+
+
+- Independiente de programa comercial
+
+- Independiente de plataformas específicas
+
+- Permite combinar texto y análisis en un mismo documento
+
+- Foco en los contenidos en lugar del formato
+
+- Permite distintas opciones de formato final
+
+:::
+::: {.column width="40%"}
+
+![](images/quarto.png)
+![](images/vscode.png)
+
+::: 
+:::
+
+
+
+## ¿Qué es markdown?
+
+- Forma de escritura simple con pocas marcas de formato
+
+- Conversión a distintos formatos de salida (html, pdf)
+
+- Soporta encabezados, tablas, imágenes, tablas de contenidos, ecuaciones, links...
+
+- Filosofía: foco en contenido primero, el formato después.
+
+## ¿Qué es Quarto?
+
+- [Quarto](https://quarto.org/) es un sistema moderno de creación de documentos dinámicos, informes, presentaciones, libros, sitios web y más, a partir de archivos de texto plano y por medio del conversor universal de documentos [Pandoc](https://pandoc.org/).
+
+- Evolución de los sistemas de autoría como Jupyter, R Markdown, todo dentro del mismo documento. 
+
+
+
+
+## {data-background-color="black"}
+
+### La escritura en texto simple (como Markdown o Quarto) permite implementar un sistema de control de versiones, además de herramientas de respaldo, colaboración y comunicación
+
+
+## Git
+
+::: {.columns}
+::: {.column width="40%"}
+![](images/git.png)
+:::
+
+::: {.column width="60%"}
+- es una especie de memoria o registro local que guarda información sobre:
+
+  - quién hizo un cambio
+  - cuándo lo hizo
+  - qué hizo
+
+- mantiene la información de todos los cambios en la historia de la carpeta / repositorio local
+
+- se puede sincronizar con un repositorio remoto (ej. Github)
+:::
+:::
+
+## Git/github
+
+- actualmente, Git / Github posee más de 100 millones de repositorios
+
+- mayor fuente de código en el mundo
+
+- ha transitado desde el mundo de desarrollo de software hacia distintos ámbitos de trabajo colaborativo y abierto
+
+- entorno de trabajo que favorece la ciencia abierta
+
+
+=== -->
 </section>
-<section id="section-1" class="slide level2">
+<section id="sitio-web" class="slide level2">
+<h2>Sitio web</h2>
+<iframe src="https://lisacoes.netlify.app/" width="2000" height="1000"></iframe>
+
+</section>
+<section id="portadafinal" class="slide level2 title-slide center" data-background-image="imagenes/parallax.jpg" data-background-size="cover" data-background-position="center" data-background-opacity="0.80">
 <h2></h2>
+<div class="cover">
+<p><img src="imagenes/LISA2.png" class="cover-logo" alt="LISA"></p>
+<!-- === FIX PORTADA: alta especificidad + !important (autocontenido) === -->
+<p><link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"></p>
+<style>
+.reveal .slides section#portada,
+.reveal .slides section#portada * { font-family: "Noto Serif", serif; }
+.reveal .slides section#portada { background:#fff !important; color:#111827 !important; }
+
+/* Contenedor portada */
+.reveal .slides section#portada .cover{
+  max-width: 980px !important;
+  min-height: 68vh !important;
+  margin: 0 auto !important;
+  padding: 3vh 4vw 5vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+/* LOGO — más pequeño y centrado */
+.reveal .slides section#portada .cover img.cover-logo{
+  width: clamp(150px, 20vw, 280px) !important;   /* ↓ más chico */
+  height: auto !important;
+  margin: 0 auto 8px !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* KICKER — rojo, mayúsculas, pequeño */
+.reveal .slides section#portada .cover .cover-kicker{
+  font-family:"Cabin", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+  color:#D91A2A !important;
+  letter-spacing: .18em !important;
+  text-transform: uppercase !important;
+  font-weight: 800 !important;
+  font-size: .85rem !important;
+  margin: .10rem 0 .40rem !important;
+}
+
+/* TÍTULO — negro, menos aire */
+.reveal .slides section#portada .cover h1.cover-title{
+  font-family:"Cabin", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+  color:#111 !important;
+  font-weight: 800 !important;
+  line-height: 1.12 !important;
+  letter-spacing: .2px !important;
+  font-size: clamp(32px, 4.6vw, 52px) !important;   /* ↓ menos grande */
+  margin-top: .30rem !important;
+  margin-bottom: .60rem !important;
+}
+
+/* PÍLDORA — más CUADRADA, NO a lo ancho */
+.reveal .slides section#portada .cover .cover-pill{
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: .20rem !important;
+  background: #fff !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 14px !important;
+  padding: .55rem .90rem !important;
+  width: auto !important;                                /* se ciñe al contenido */
+  max-width: min(90vw, 560px) !important;                /* ← límite real */
+  box-shadow: 0 10px 22px rgba(0,0,0,.06) !important;
+}
+
+/* Tipos dentro de la píldora */
+.reveal .slides section#portada .cover .cover-pill .line-1{
+  font-family:"Cabin", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 800 !important;
+  font-size: clamp(.92rem, 1.05vw, 1rem) !important;
+  color:#111 !important;
+}
+.reveal .slides section#portada .cover .cover-pill .line-2{
+  font-size: clamp(.86rem, 1vw, .95rem) !important;
+  color: #374151 !important;
+}
+
+/* Meta */
+.reveal .slides section#portada .cover .cover-meta{
+  color:#9CA3AF !important;
+  font-size: clamp(.88rem, 1.05vw, .98rem) !important;
+  margin: 1rem 0 1.2rem !important;
+}
+
+/* BOTÓN */
+.reveal .slides section#portada .cover .btn{
+  --bg:#D91A2A;
+  display:inline-flex !important; align-items:center !important; gap:.45rem !important;
+  padding:.34rem .68rem !important; border:2px solid var(--bg) !important; border-radius:10px !important;
+  background:var(--bg) !important; color:#fff !important; text-decoration:none !important;
+  font-family:"Cabin", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+  font-weight:800 !important; letter-spacing:.02em !important; font-size:clamp(.78rem,.95vw,.9rem) !important;
+  box-shadow:0 6px 16px rgba(217,26,42,.22) !important; transition:filter .2s ease !important;
+}
+.reveal .slides section#portada .cover .btn:hover{ filter: brightness(.92) !important; }
+.reveal .slides section#portada .cover .btn .gh{
+  width:1.05em !important; height:1.05em !important; display:inline-block !important; transform:translateY(1px) !important;
+  background-repeat:no-repeat !important; background-size:contain !important;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='98' height='96' viewBox='0 0 98 96' fill='white'><path d='M48.9 0C21.9 0 0 22 0 49.2c0 21.7 13.8 40 33 46.4 2.4.5 3.3-1 3.3-2.3 0-1.1 0-4.1-.1-8-13.4 2.9-16.2-6.5-16.2-6.5-2.2-5.6-5.5-7-5.5-7-4.5-3 .3-3 .3-3 5 .3 7.6 5.2 7.6 5.2 4.4 7.6 11.5 5.4 14.3 4.1.5-3.2 1.7-5.4 3.1-6.7-10.7-1.2-21.9-5.4-21.9-24.1 0-5.3 1.9-9.6 5-13-0.5-1.2-2.2-6.2.5-12.9 0 0 4.1-1.3 13.4 5 3.9-1.1 8.1-1.6 12.2-1.6s8.3.5 12.2 1.6c9.3-6.3 13.4-5 13.4-5 2.7 6.7 1 11.7.5 12.9 3.1 3.4 5 7.7 5 13 0 18.7-11.2 22.9-21.9 24.1 1.8 1.6 3.3 4.7 3.3 9.4 0 6.8-.1 12.3-.1 14 0 1.3.9 2.9 3.3 2.3 19.2-6.4 33-24.7 33-46.4C97.8 22 75.9 0 48.9 0z'/></svg>") !important;
+}
+
+/* Compacción por altura baja */
+@media (max-height: 780px){
+  .reveal .slides section#portada .cover img.cover-logo{ width: clamp(150px, 20vw, 280px) !important; }
+  .reveal .slides section#portada .cover h1.cover-title{ font-size: clamp(30px, 4.2vw, 48px) !important; }
+}
+</style>
+<style>
+/* ====== BUMP ~10–12% SOLO EN LA PORTADA ====== */
+
+/* Kicker + título */
+.reveal .slides section#portada .cover .cover-kicker{
+  font-size: .92rem !important;
+  letter-spacing: .20em !important;
+  margin: .18rem 0 .55rem !important;
+}
+.reveal .slides section#portada .cover h1.cover-title{
+  font-size: clamp(36px, 5.2vw, 66px) !important;
+  margin-bottom: .75rem !important;
+}
+
+/* Píldora (más “presente”, sigue centrada) */
+.reveal .slides section#portada .cover .cover-pill{
+  padding: .65rem 1.05rem !important;
+  border-radius: 16px !important;
+  box-shadow: 0 12px 26px rgba(0,0,0,.08) !important;
+}
+.reveal .slides section#portada .cover .cover-pill .line-1{
+  font-size: clamp(1.00rem, 1.2vw, 1.12rem) !important;
+}
+.reveal .slides section#portada .cover .cover-pill .line-2{
+  font-size: clamp(.94rem, 1.08vw, 1.02rem) !important;
+}
+
+/* Meta (fecha) un pelín mayor y con más aire */
+.reveal .slides section#portada .cover .cover-meta{
+  font-size: clamp(.94rem, 1.12vw, 1.02rem) !important;
+  margin: 1.1rem 0 1.35rem !important;
+}
+
+/* Botón GitHub un poco más grande */
+.reveal .slides section#portada .cover .btn{
+  font-size: clamp(.84rem, 1.02vw, .98rem) !important;
+  padding: .38rem .78rem !important;
+  border-radius: 11px !important;
+  box-shadow: 0 8px 18px rgba(217,26,42,.24) !important;
+}
+
+/* Afinado cuando la ventana es “baja” */
+@media (max-height: 780px){
+  .reveal .slides section#portada .cover img.cover-logo{
+    width: clamp(220px, 28vw, 380px) !important;
+  }
+  .reveal .slides section#portada .cover h1.cover-title{
+    font-size: clamp(34px, 4.8vw, 58px) !important;
+  }
+}
+</style>
+<style>
+/* Caja translúcida detrás de TODO el contenido de la portada */
+.reveal .slides section#portada .cover{
+  position: relative !important;
+}
+.reveal .slides section#portada .cover::before{
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(255,255,255,0.58); /* <= ajusta transparencia (0.35–0.75) */
+  border-radius: 26px;                /* mismo look de tarjeta */
+  box-shadow: 0 18px 36px rgba(0,0,0,.10); /* sombra suave */
+  z-index:0;
+}
+/* asegura el contenido por encima */
+.reveal .slides section#portada .cover > *{ position:relative; z-index:1; }
+
+/* (opcional) que la “píldora” también sea un poquito translúcida */
+.reveal .slides section#portada .cover .cover-pill{
+  background: rgba(255,255,255,0.90) !important;
+}
+</style>
+<style>
+/* 1) El slide de portada NO debe tener panel blanco */
+.reveal .slides section#portada{
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* 2) Un solo panel translúcido en la .cover (sin borde inferior) */
+.reveal .slides section#portada .cover{
+  background: rgba(255,255,255,0.36) !important;  /* antes 0.16 */
+  backdrop-filter: blur(4px) saturate(115%) !important; /* antes 6px */
+  -webkit-backdrop-filter: blur(4px) saturate(115%) !important;
+  border: none !important;
+  border-radius: 36px 36px 0 0 !important;         /* sin borde inferior */
+  box-shadow: 0 12px 36px rgba(0,0,0,.12) !important;
+}
 
 
-<img data-src="https://lisacoes.com/componentes/b-data/lisa-open-data.gif" style="width:70.0%" alt="LISA transparency" class="r-stretch"></section>
+/* Píldora más legible (ligeramente más opaca) */
+.reveal .slides section#portada .cover .cover-pill{
+  background: rgba(255,255,255,0.90) !important;   /* antes 0.82 */
+  box-shadow: 0 8px 18px rgba(0,0,0,.10) !important;
+}
+</style>
+
+</div>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -396,19 +729,19 @@
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="modulo1_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="LatinR_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="modulo1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="modulo1_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="modulo1_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="modulo1_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="modulo1_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="LatinR_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="LatinR_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="LatinR_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="LatinR_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="LatinR_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="modulo1_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="modulo1_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="modulo1_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="modulo1_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="LatinR_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="LatinR_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="LatinR_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="LatinR_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

@@ -180,3 +180,87 @@ $code-block-border-color: #93a1a1 !default;
   border-radius: 50%;
   object-fit: cover;
 }
+
+/* ==== Add-ons para "Diseño Transparente: Preregistros" ==== */
+
+/* Variable CSS global para rojo LISA (coherente con tus hotspots) */
+:root { --lisa-red: #B30021; }
+
+/* Tokens ligeros */
+$border-weak: #e5e7eb;              /* gris 200 suave */
+$shadow-soft: 0 10px 30px rgba(0,0,0,.06);
+
+/* Utilidades de margen (para separar bloques) */
+.mt-1 { margin-top: .4rem; }
+.mt-2 { margin-top: .8rem; }
+.mt-3 { margin-top: 1.2rem; }
+.mt-4 { margin-top: 1.8rem; }
+
+/* Kicker (subtítulo pequeño en mayúsculas rojo) */
+.kicker {
+  font-size: .9rem;
+  color: var(--lisa-red);
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+/* Panel blanco con borde leve y sombra suave */
+.panel {
+  background: #fff;
+  border: 1px solid $border-weak;
+  box-shadow: $shadow-soft;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  color: $body-color;
+}
+
+/* Llamado de atención con banda roja */
+.callout {
+  border-left: 4px solid var(--lisa-red);
+  padding: .7rem 1rem;
+  background: #fff6f7;              /* rojo muy suave */
+  border-radius: 8px;
+}
+
+/* Grid 2 columnas para texto + imágenes (responsivo) */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.grid-2 .right img {
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+/* Enlaces con subrayado sutil alineado a tu $link-color */
+.reveal a,
+.reveal a:visited {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(129, 11, 17, .25); /* $link-color con alpha */
+}
+.reveal a:hover { border-bottom-color: $link-color; }
+
+/* Barra de progreso y numeración en rojo LISA (coherente) */
+.reveal .progress {
+  background: rgba(0,0,0,.06);
+}
+.reveal .progress span {
+  background: var(--lisa-red);
+}
+
+/* Títulos un poquito más cerrados (mejor ritmo visual) */
+.reveal .slides section h1,
+.reveal .slides section h2,
+.reveal .slides section h3 { letter-spacing: .2px; }
+
+/* Responsivo: stack en 1 columna bajo 900px */
+@media (max-width: 900px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
+
