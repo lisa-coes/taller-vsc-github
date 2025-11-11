@@ -330,16 +330,6 @@ El movimiento **Open Access** busca promover el acceso libre a la producción ci
 :::
 ::::
 
-# OFERTA FORMATIVA DE LISA {background-color="#8E44AD"}
-
-## Los 4 Componentes de LISA
-
-::: {.incremental}
-1. **Diseño Transparente** - con preregistros
-2. **Datos Abiertos** - con protocolos de documentación
-3. **Análisis Reproducibles** - estructura, código, documentos dinámicos y control de versiones
-4. **Publicaciones Libres** - orientación sobre Open Access
-:::
 
 ## Recursos Disponibles
 
@@ -356,41 +346,16 @@ Todo esto acompañado de:
 Diseñados específicamente para la **comunidad de ciencias sociales de habla hispana**.
 :::
 
-## ¡Visítanos!
 
-### [lisacoes.com](https://lisacoes.com)
 
-Encontrarás:
+## ¡Visítanos [lisacoes.com](https://lisacoes.com)!
 
-- Guías paso a paso
-- Ejemplos prácticos
-- Repositorio de GitHub con materiales
-- Comunidad activa
 
-::: {.fragment}
-### LISA es más que herramientas técnicas
+```{=html}
+<iframe src="https://lisacoes.netlify.app/" width="2000" height="1000"></iframe>
 
-Es una **inciativa comprometida** con hacer la ciencia social más transparente, accesible y robusta.
-:::
+```
+## {.title-slide #portadafinal data-background-image="imagenes/parallax.jpg" data-background-size="cover" data-background-position="center" data-background-opacity="0.80"}
 
-## ¡Gracias! {background-color="#2C3E50"}
-
-:::: {.columns}
-::: {.column width="50%"}
-### Contacto
-
-[lisacoes.com](https://lisacoes.com)
-
-contacto@lisacoes.com
-
-GitHub: lisa-coes
-:::
-
-::: {.column width="50%"}
-### Preguntas
-
-¿Dudas? ¿Comentarios?
-
-¡Conversemos!
-:::
-::::
+<div class="cover">
+  <img src="imagenes/LISA2.png" class="cover-logo" alt="LISA" />

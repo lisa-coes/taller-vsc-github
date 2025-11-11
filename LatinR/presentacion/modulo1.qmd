@@ -183,6 +183,78 @@ body-classes: kathy
 :::
 
 
+## El problema estructural {.compact-slide style="font-size:0.80em; line-height:1.05;"} 
+
+
+::: columns
+::: {.column width="55%"}
+<span class="kicker">Transparentar las decisiones metodológicas</span>
+<div class="panel">
+
+En **ciencias sociales** convivimos con incentivos y presiones por resultados relevantes (rechazar $H_0$). Esto da paso a practicas como *p-hacking, HARKing (hipótesis post-hoc), reporte selectivo.*
+
+<strong>Estos problemas erosionan:</strong>
+
+<ul>
+  <li><strong>Validez</strong>: más <strong>falsos positivos</strong> y <strong>efectos inflados</strong>.</li>
+  <li><strong>Acumulación</strong>: resultados que no se <strong>replican</strong> ni se <strong>integran</strong>.</li>
+  <li><strong>Confianza pública</strong>: decisiones de política con base frágil.</li>
+    <li><strong>Avance del conocimiento</strong>: solo conocemos lo que "resulta".</li>
+</ul>
+
+
+</div>
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop){fig-alt="Cuaderno y laptop: del diseño al código auditable" width="100%"}
+![](https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1200&auto=format&fit=crop){fig-alt="Equipo analizando resultados: escrutinio y trazabilidad" width="100%" .mt-3}
+:::
+:::
+
+
+
+
+
+## ¿Por qué el preregistro es central en ciencia abierta? {.compact-slide style="font-size:0.75em; line-height:1.05;"} 
+
+::: columns
+::: {.column width="60%"}
+<span class="kicker">¿Qué es un preregistro?</span>
+<div class="panel">
+
+Documento fechado que **fija** el diseño **antes** de recolectar y analizar datos. Incluye hipótesis, plan de recolección y plan de análisis.
+
+No se trata de rigidez burocrática, sino de **hacer auditable** la secuencia lógica del estudio:
+ **teoría → diseño → datos → análisis**. 
+
+El preregistro diferencia lo **confirmatorio** (compromisos previos) de lo **exploratorio** (descubrimiento honesto). Explorar sigue permitido; lo que cambia es **cómo lo reportamos**.
+
+
+
+</div>
+
+<div class="callout mt-3">
+<strong>Idea fuerza:</strong> La ciencia abierta no es “mostrar todo por mostrar”; es <em>hacer controlables</em> las decisiones que llevan del dato a la conclusión.
+</div>
+
+:::
+
+
+
+::: {.column width="40%"}
+![](imagenes/pre.png){fig-alt="Repositorio y control de versiones" width="100%"}
+![](https://www.science.org/do/10.1126/science.z4say23/full/_20240712_wl-1721325611733.jpg){fig-alt="Coordinación de equipo y trazabilidad de decisiones" width="100%" .mt-3}
+:::
+:::
+
+## 
+
+![](https://lisacoes.com/componentes/a-dise%C3%B1o/lisa-transparency.gif){fig-alt="LISA transparency" width="70%"}
+
+
+
+
 
 ::: {style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;"}
 # Datos Abiertos
@@ -190,3 +262,35 @@ body-classes: kathy
 ![](images/datos.png){width="70%"}
 
 :::
+## ¿Por qué y qué incluir? {.compact-slide style="font-size:0.80em; line-height:1.05;"}
+
+::: columns
+::: {.column width="55%"}
+<span class="kicker">Ciencia abierta y reutilización</span>
+<div class="panel">
+
+Abrir datos es **hacer verificable y reutilizable** el trabajo. Esto permite **replicar**, **acumular** evidencia y **ahorra costos** en nuevas investigaciones.
+
+<strong>Incluye:</strong>
+
+<ul>
+  <li><strong>Base de datos</strong></li>
+  <li><strong>Cuestionario</strong></li>
+  <li><strong>Libro de códigos</strong></li>
+  <li><strong>Ficha técnica</strong></li>
+</ul>
+
+<strong>Principios guía:</strong> FAIR (Findable, Accessible, Interoperable, Reusable) junto al uso de  <strong>licencia</strong>  y <strong>anonimización</strong>.
+
+</div>
+:::
+
+::: {.column width="45%"}
+![](https://www.science.org/do/10.1126/science.zyyid5c/full/_20240416_car_open-databases-1713277480687.jpg){fig-alt="Repositorio con control de versiones" width="100%"}
+![](https://fredvbrug.github.io/images/OA.jpg){fig-alt="Citación y trazabilidad con DOI" width="100%" .mt-3}
+:::
+:::
+
+
+## 
+![](https://lisacoes.com/componentes/b-data/lisa-open-data.gif){fig-alt="LISA transparency" width="70%"}
