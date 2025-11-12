@@ -216,7 +216,7 @@ En **ciencias sociales** convivimos con incentivos y presiones por resultados re
 
 
 
-## ¿Por qué el preregistro es central en ciencia abierta? {.compact-slide style="font-size:0.75em; line-height:1.05;"} 
+## ¿Por qué el pre-registro es central en LISA? {.compact-slide style="font-size:0.75em; line-height:1.05;"} 
 
 ::: columns
 ::: {.column width="60%"}
