@@ -223,10 +223,7 @@ En **ciencias sociales** convivimos con incentivos y presiones por resultados re
 <span class="kicker">¿Qué es un preregistro?</span>
 <div class="panel">
 
-Documento fechado que **fija** el diseño **antes** de recolectar y analizar datos. Incluye hipótesis, plan de recolección y plan de análisis.
-
-No se trata de rigidez burocrática, sino de **hacer auditable** la secuencia lógica del estudio:
- **teoría → diseño → datos → análisis**. 
+Documento fechado que **fija** el diseño **antes** de recolectar y analizar datos. Incluye hipótesis, plan de recolección y plan de análisis. En ese sentido, el foco de los preregistros de hipótesis es dejar registradas estas antes de entrar al análisis de datos.
 
 El preregistro diferencia lo **confirmatorio** (compromisos previos) de lo **exploratorio** (descubrimiento honesto). Explorar sigue permitido; lo que cambia es **cómo lo reportamos**.
 
