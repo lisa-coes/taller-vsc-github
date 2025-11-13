@@ -352,137 +352,6 @@ El **control de versiones** es esencial para la reproducibilidad:
 ![](https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop){fig-alt="Colaboración en equipo" width="100%" .mt-3}
 :::
 :::
-
-##
-![](https://lisacoes.com/componentes/c-code/lisa-code.gif){fig-alt="LISA reproducible analysis" width="70%"}
-
-::: {style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;"}
-# PUBLICACIONES LIBRES {background-color="#16A085"}
-
-![](imagenes/openaccess.png){width="70%"}
-:::
-
-## ¿Qué son las Publicaciones Libres? {.compact-slide style="font-size:0.80em; line-height:1.05;"}
-
-::: columns
-::: {.column width="55%"}
-<span class="kicker">Acceso libre al conocimiento científico</span>
-<div class="panel">
-
-**Dar acceso libre** a los resultados de la investigación sin barreras económicas ni legales.
-
-<strong>El Problema:</strong>
-
-La publicación científica es clave para dar a conocer resultados, pero a menudo encontramos **barreras de acceso al conocimiento** que limitan el impacto y la equidad.
-
-<strong>La Solución:</strong>
-
-El movimiento **Open Access** busca promover el acceso libre a la producción científica sin restricciones de copyright, democratizando el conocimiento.
-
-</div>
-:::
-
-::: {.column width="45%"}
-![](https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=1200&auto=format&fit=crop){fig-alt="Acceso abierto" width="100%"}
-![](https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop){fig-alt="Conocimiento libre" width="100%" .mt-3}
-:::
-:::
-:::
-
-## Las 5 Rutas del Open Access {.compact-slide style="font-size:0.75em; line-height:1.05;"}
-
-::: columns
-::: {.column width="60%"}
-<span class="kicker">Diferentes caminos hacia el acceso abierto</span>
-<div class="panel">
-
-Existen **múltiples rutas** para publicar en Open Access:
-
-::: {.incremental}
-1. **Dorada** - Publicación gratuita para el lector (la revista cubre costos)
-2. **Verde** - Auto-archivo en repositorios institucionales o temáticos
-3. **Híbrida** - Combina artículos de acceso libre y restringido en la misma revista
-4. **Diamante** - Completamente libre y gratuita (sin costo para autor ni lector)
-5. **Bronce** - Acceso libre pero sin licencias claras de reutilización
-:::
-
-</div>
-
-<div class="callout mt-3">
-<strong>Importante:</strong> Conocer la política OA de la revista donde queremos publicar <em>antes</em> de enviar el manuscrito.
-</div>
-:::
-
-::: {.column width="40%"}
-![](https://images.unsplash.com/photo-1513001900722-370f803f498d?q=80&w=1200&auto=format&fit=crop){fig-alt="Rutas Open Access" width="100%"}
-![](https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=1200&auto=format&fit=crop){fig-alt="Publicación científica" width="100%" .mt-3}
-:::
-:::
-:::
-
-## Etapas del Artículo {.compact-slide style="font-size:0.80em; line-height:1.05;"}
-
-::: columns
-::: {.column width="55%"}
-<span class="kicker">Del borrador a la publicación final</span>
-<div class="panel">
-
-Un artículo científico pasa por **tres etapas principales**:
-
-::: {.incremental}
-1. **Pre-print** 
-   - Borrador antes de revisión por pares
-   - Puede compartirse en repositorios (ej: SocArxiv)
-   
-2. **Post-print** 
-   - Aceptado tras revisión por pares
-   - Sin formato final de la revista
-   - Versión del autor aceptada
-   
-3. **Print** 
-   - Versión publicada final
-   - Con formato editorial de la revista
-:::
-
-</div>
-:::
-
-::: {.column width="45%"}
-![](https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop){fig-alt="Escritura académica" width="100%"}
-![](https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop){fig-alt="Proceso editorial" width="100%" .mt-3}
-:::
-:::
-:::
-
-## Publicar según la Etapa {.compact-slide style="font-size:0.80em; line-height:1.05;"}
-
-::: columns
-::: {.column width="55%"}
-<span class="kicker">Recomendación LISA para Pre-prints</span>
-<div class="panel">
-
-**SocArxiv** es la mejor opción para ciencias sociales:
-
-<ul>
-  <li>Obtén un <strong>DOI</strong> (identificador persistente)</li>
-  <li>Hace tu documento <strong>citable</strong> inmediatamente</li>
-  <li><strong>No afecta</strong> la posterior indexación en revistas</li>
-  <li>Aumenta la <strong>visibilidad</strong> de tu trabajo</li>
-  <li>Permite recibir <strong>retroalimentación temprana</strong></li>
-</ul>
-
-</div>
-
-<div class="callout mt-3">
-<strong>Ventaja:</strong> Tu investigación empieza a generar <em>impacto</em> antes de la publicación formal.
-</div>
-:::
-
-::: {.column width="45%"}
-![](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop){fig-alt="Repositorios pre-print" width="100%"}
-![](https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop){fig-alt="SocArxiv" width="100%" .mt-3}
-:::
-:::
 :::
 
 ## Recursos Disponibles {.compact-slide style="font-size:0.80em; line-height:1.05;"}
@@ -512,9 +381,7 @@ Diseñados específicamente para la **comunidad de ciencias sociales de habla hi
 ![](https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop){fig-alt="Comunidad LISA" width="100%" .mt-3}
 :::
 :::
-
-##
-![](https://lisacoes.com/componentes/e-publish/lisa-publications.gif){fig-alt="LISA publications" width="70%"}
+:::
 
 ::: {style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;"}
 ## ¡Visítanos [lisacoes.com](https://lisacoes.com)!
@@ -529,3 +396,4 @@ Diseñados específicamente para la **comunidad de ciencias sociales de habla hi
 
 <div class="cover">
   <img src="imagenes/LISA2.png" class="cover-logo" alt="LISA" />
+</div>
