@@ -287,213 +287,363 @@
 
 </style>
 </section>
-<section>
-<section id="análisis-reproducibles" class="title-slide slide level1 center" data-background-color="#2C3E50">
+<section id="análisis-reproducibles" class="title-slide slide level1 center" style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;" data-background-color="#2C3E50">
 <h1>ANÁLISIS REPRODUCIBLES</h1>
 
-</section>
-<section id="qué-son-los-análisis-reproducibles" class="slide level2">
+<img data-src="imagenes/reproducible.png" style="width:70.0%" class="r-stretch"></section>
+
+<section id="qué-son-los-análisis-reproducibles" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
 <h2>¿Qué son los Análisis Reproducibles?</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Definición</strong></p>
-<p>Permitir que otros puedan regenerar de manera independiente los resultados usando los materiales originales.</p>
-</div><div class="column" style="width:50%;">
-<p><strong>El Problema</strong></p>
+<div class="column" style="width:55%;">
+<span class="kicker">Ciencia verificable y acumulativa</span>
+<div class="panel">
+<p>Permitir que otros puedan <strong>regenerar de manera independiente</strong> los resultados usando los materiales originales.</p>
+<p><strong>El Problema:</strong></p>
 <p>¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales?</p>
-<p>Esto hace <strong>imposible</strong> acceder a los procedimientos que generaron sus resultados.</p>
-</div></div>
-</section>
-<section id="los-4-pasos-de-lisa" class="slide level2">
-<h2>Los 4 Pasos de LISA</h2>
-<ol type="1">
-<li class="fragment"><strong>Estructura del proyecto</strong> - Protocolo IPO</li>
-<li class="fragment"><strong>Prácticas de código</strong> - Estándares mínimos</li>
-<li class="fragment"><strong>Documentos dinámicos</strong> - Quarto y similares</li>
-<li class="fragment"><strong>Control de versiones</strong> - Git y GitHub</li>
-</ol>
-</section>
-<section id="paso-1-estructura-del-proyecto" class="slide level2 smaller">
-<h2>Paso 1: Estructura del Proyecto</h2>
-<p><strong>Protocolo IPO:</strong> Input, Procesamiento y Output</p>
-<ul>
-<li class="fragment"><p><strong>Carpeta raíz</strong>: documentar y orientar</p>
-<ul>
-<li class="fragment">Archivo README que explique la estructura</li>
-</ul></li>
-<li class="fragment"><p><strong>Datos</strong>: separar originales de procesados</p>
-<ul>
-<li class="fragment">Documentar claramente de dónde provienen</li>
-<li class="fragment">Explicar cómo acceder a ellos</li>
-</ul></li>
-<li class="fragment"><p><strong>Procesamiento</strong>: scripts organizados</p></li>
-<li class="fragment"><p><strong>Output</strong>: resultados finales</p></li>
-</ul>
-</section>
-<section id="paso-2-prácticas-de-código" class="slide level2">
-<h2>Paso 2: Prácticas de Código</h2>
-<p>Estándares mínimos para facilitar la comprensión:</p>
-<ul>
-<li class="fragment"><strong>Comentarios explicativos</strong> - ¿Qué hace este código?</li>
-<li class="fragment"><strong>Buena indentación</strong> - Estructura visual clara</li>
-<li class="fragment"><strong>Nombres claros de objetos</strong> - <code>datos_limpios</code> &gt; <code>df2</code></li>
-<li class="fragment"><strong>Organización lógica</strong> - Un flujo que otros puedan seguir</li>
-</ul>
-</section>
-<section id="paso-3-documentos-dinámicos" class="slide level2">
-<h2>Paso 3: Documentos Dinámicos</h2>
-<h3 id="herramientas-como-quarto">Herramientas como Quarto</h3>
-<p>Lo mejor de dos mundos:</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Texto plano</strong></p>
-<p>Independiente de software comercial</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Código integrado</strong></p>
-<p>Todo se genera en el mismo documento</p>
-</div></div>
-<div class="fragment">
-<p><strong>Ventaja clave:</strong> No necesitamos importar tablas o gráficos externos; todo es autocontenido.</p>
+<p>Esto hace <strong>imposible</strong> acceder a los procedimientos que generaron sus resultados, erosionando la confianza y frenando el avance científico.</p>
 </div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Análisis de datos reproducibles"> <img data-src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="Código y documentación"></p>
+</div></div>
+<p>:::</p>
 </section>
-<section id="paso-4-control-de-versiones" class="slide level2">
-<h2>Paso 4: Control de Versiones</h2>
-<h3 id="git-y-github">Git y GitHub</h3>
+<section id="los-4-pasos-de-lisa" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
+<h2>Los 4 Pasos de LISA</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<span class="kicker">Ruta hacia la reproducibilidad</span>
+<div class="panel">
+<p>LISA propone <strong>cuatro pasos fundamentales</strong> para garantizar análisis reproducibles:</p>
+<ol type="1">
+<li class="fragment"><strong>Estructura del proyecto</strong> - Protocolo IPO (Input, Procesamiento, Output)</li>
+<li class="fragment"><strong>Prácticas de código</strong> - Estándares mínimos de legibilidad</li>
+<li class="fragment"><strong>Documentos dinámicos</strong> - Quarto y herramientas similares</li>
+<li class="fragment"><strong>Control de versiones</strong> - Git y GitHub para trazabilidad</li>
+</ol>
+</div>
+</div><div class="column" style="width:40%;">
+<p><img data-src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Estructura y organización"> <img data-src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="Código limpio y documentado"></p>
+</div></div>
+<p>:::</p>
+</section>
+<section id="paso-1-estructura-del-proyecto" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
+<h2>Paso 1: Estructura del Proyecto</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<span class="kicker">Protocolo IPO: Input, Procesamiento y Output</span>
+<div class="panel">
+<p>Una <strong>estructura clara</strong> facilita la navegación y comprensión del proyecto:</p>
 <ul>
-<li class="fragment"><strong>Git</strong> registra:
+<li>
+<strong>Carpeta raíz</strong>: documentar y orientar
 <ul>
-<li class="fragment">¿<strong>Qué</strong> cambió?</li>
-<li class="fragment">¿<strong>Quién</strong> lo cambió?</li>
-<li class="fragment">¿<strong>Cuándo</strong> se cambió?</li>
-</ul></li>
-<li class="fragment"><strong>GitHub</strong> permite:
-<ul>
-<li class="fragment">Hospedar proyectos públicamente</li>
-<li class="fragment">Colaboración en equipo</li>
-<li class="fragment">Fundamental para grandes equipos</li>
-</ul></li>
+<li>
+Archivo README que explique la estructura
+</li>
 </ul>
-</section></section>
-<section>
-<section id="publicaciones-libres" class="title-slide slide level1 center" data-background-color="#16A085">
+</li>
+<li>
+<strong>Datos (Input)</strong>: separar originales de procesados
+<ul>
+<li>
+Documentar claramente de dónde provienen
+</li>
+<li>
+Explicar cómo acceder a ellos
+</li>
+</ul>
+</li>
+<li>
+<strong>Procesamiento</strong>: scripts organizados secuencialmente
+</li>
+<li>
+<strong>Output</strong>: resultados finales (tablas, gráficos, reportes)
+</li>
+</ul>
+</div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="https://images.unsplash.com/photo-1544396821-4dd40b938ad3?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Organización de archivos"> <img data-src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="Estructura de carpetas"></p>
+</div></div>
+<p>:::</p>
+</section>
+<section id="paso-2-prácticas-de-código" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
+<h2>Paso 2: Prácticas de Código</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<span class="kicker">Estándares mínimos de legibilidad</span>
+<div class="panel">
+<p>Un código <strong>legible y bien estructurado</strong> facilita la comprensión y reduce errores:</p>
+<ul>
+<li>
+<strong>Comentarios explicativos</strong>: ¿Qué hace este código y por qué?
+</li>
+<li>
+<strong>Buena indentación</strong>: Estructura visual que refleja la lógica
+</li>
+<li>
+<strong>Nombres claros de objetos</strong>: <code>datos_limpios</code> &gt; <code>df2</code>
+</li>
+<li>
+<strong>Organización lógica</strong>: Un flujo que otros puedan seguir fácilmente
+</li>
+</ul>
+</div>
+<div class="mt-3">
+<div class="callout callout-none no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><strong>Idea fuerza:</strong> Escribimos código para <em>humanos</em> que lo leerán después, no solo para máquinas.</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Código limpio"> <img data-src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="Mejores prácticas"></p>
+</div></div>
+<p>:::</p>
+</section>
+<section id="paso-3-documentos-dinámicos" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
+<h2>Paso 3: Documentos Dinámicos</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<span class="kicker">Herramientas como Quarto</span>
+<div class="panel">
+<p>Los <strong>documentos dinámicos</strong> combinan lo mejor de dos mundos:</p>
+<ul>
+<li>
+<strong>Texto plano</strong>: Independiente de software comercial, versionable y accesible
+</li>
+<li>
+<strong>Código integrado</strong>: Todo se genera en el mismo documento (análisis, tablas, gráficos)
+</li>
+</ul>
+<p><strong>Ventaja clave:</strong> No necesitamos importar tablas o gráficos externos; todo es <strong>autocontenido y reproducible</strong>.</p>
+</div>
+<div class="mt-3">
+<div class="callout callout-none no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><strong>Quarto</strong> permite publicar en múltiples formatos: HTML, PDF, Word, presentaciones y más.</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Documentos dinámicos"> <img data-src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="Código y narrativa"></p>
+</div></div>
+<p>:::</p>
+</section>
+<section id="paso-4-control-de-versiones" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
+<h2>Paso 4: Control de Versiones</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<span class="kicker">Git y GitHub: trazabilidad completa</span>
+<div class="panel">
+<p>El <strong>control de versiones</strong> es esencial para la reproducibilidad:</p>
+<strong>Git registra:</strong>
+<ul>
+<li>
+¿<strong>Qué</strong> cambió?
+</li>
+<li>
+¿<strong>Quién</strong> lo cambió?
+</li>
+<li>
+¿<strong>Cuándo</strong> se cambió?
+</li>
+<li>
+¿<strong>Por qué</strong> se cambió? (mensajes de commit)
+</li>
+</ul>
+<strong>GitHub permite:</strong>
+<ul>
+<li>
+Hospedar proyectos <strong>públicamente</strong>
+</li>
+<li>
+Colaboración en equipo con control de cambios
+</li>
+<li>
+Fundamental para proyectos grandes y colaborativos
+</li>
+</ul>
+</div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Control de versiones"> <img data-src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="Colaboración en equipo"></p>
+</div></div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+
+<img data-src="https://lisacoes.com/componentes/c-code/lisa-code.gif" style="width:70.0%" alt="LISA reproducible analysis" class="r-stretch"></section>
+<section id="publicaciones-libres" class="title-slide slide level1 center" style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;" data-background-color="#16A085">
 <h1>PUBLICACIONES LIBRES</h1>
 
-</section>
-<section id="qué-son-las-publicaciones-libres" class="slide level2">
+<img data-src="imagenes/openaccess.png" style="width:70.0%" class="r-stretch"></section>
+
+<section id="qué-son-las-publicaciones-libres" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
 <h2>¿Qué son las Publicaciones Libres?</h2>
-<p><strong>Dar acceso libre a los resultados de la investigación</strong></p>
-<div class="fragment">
-<h3 id="el-problema">El Problema</h3>
-<p>La publicación científica es clave para dar a conocer resultados, pero a menudo encontramos <strong>barreras de acceso al conocimiento</strong>.</p>
+<div class="columns">
+<div class="column" style="width:55%;">
+<span class="kicker">Acceso libre al conocimiento científico</span>
+<div class="panel">
+<p><strong>Dar acceso libre</strong> a los resultados de la investigación sin barreras económicas ni legales.</p>
+<p><strong>El Problema:</strong></p>
+<p>La publicación científica es clave para dar a conocer resultados, pero a menudo encontramos <strong>barreras de acceso al conocimiento</strong> que limitan el impacto y la equidad.</p>
+<p><strong>La Solución:</strong></p>
+<p>El movimiento <strong>Open Access</strong> busca promover el acceso libre a la producción científica sin restricciones de copyright, democratizando el conocimiento.</p>
 </div>
-<div class="fragment">
-<h3 id="la-solución">La Solución</h3>
-<p>El movimiento <strong>Open Access</strong> busca promover el acceso libre a la producción científica sin restricciones de copyright.</p>
-</div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Acceso abierto"> <img data-src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="Conocimiento libre"></p>
+</div></div>
+<p>:::</p>
 </section>
-<section id="las-5-rutas-del-open-access" class="slide level2 smaller">
+<section id="las-5-rutas-del-open-access" class="slide level2 compact-slide" style="font-size:0.75em; line-height:1.05;">
 <h2>Las 5 Rutas del Open Access</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<span class="kicker">Diferentes caminos hacia el acceso abierto</span>
+<div class="panel">
+<p>Existen <strong>múltiples rutas</strong> para publicar en Open Access:</p>
 <ol type="1">
-<li class="fragment"><strong>Dorada</strong> - Publicación gratuita para el lector</li>
-<li class="fragment"><strong>Verde</strong> - Auto-archivo en repositorios</li>
-<li class="fragment"><strong>Híbrida</strong> - Combina acceso libre y restringido</li>
-<li class="fragment"><strong>Diamante</strong> - Completamente libre y gratuita</li>
-<li class="fragment"><strong>Bronce</strong> - Acceso sin licencias claras</li>
+<li class="fragment"><strong>Dorada</strong> - Publicación gratuita para el lector (la revista cubre costos)</li>
+<li class="fragment"><strong>Verde</strong> - Auto-archivo en repositorios institucionales o temáticos</li>
+<li class="fragment"><strong>Híbrida</strong> - Combina artículos de acceso libre y restringido en la misma revista</li>
+<li class="fragment"><strong>Diamante</strong> - Completamente libre y gratuita (sin costo para autor ni lector)</li>
+<li class="fragment"><strong>Bronce</strong> - Acceso libre pero sin licencias claras de reutilización</li>
 </ol>
-<div class="fragment">
-<p><strong>Importante:</strong> Conocer la política OA de la revista donde queremos publicar</p>
 </div>
+<div class="mt-3">
+<div class="callout callout-none no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><strong>Importante:</strong> Conocer la política OA de la revista donde queremos publicar <em>antes</em> de enviar el manuscrito.</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:40%;">
+<p><img data-src="https://images.unsplash.com/photo-1513001900722-370f803f498d?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Rutas Open Access"> <img data-src="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="Publicación científica"></p>
+</div></div>
+<p>:::</p>
 </section>
-<section id="etapas-del-artículo" class="slide level2">
+<section id="etapas-del-artículo" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
 <h2>Etapas del Artículo</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<span class="kicker">Del borrador a la publicación final</span>
+<div class="panel">
+<p>Un artículo científico pasa por <strong>tres etapas principales</strong>:</p>
 <ol type="1">
 <li class="fragment"><strong>Pre-print</strong>
 <ul>
 <li class="fragment">Borrador antes de revisión por pares</li>
+<li class="fragment">Puede compartirse en repositorios (ej: SocArxiv)</li>
 </ul></li>
 <li class="fragment"><strong>Post-print</strong>
 <ul>
-<li class="fragment">Aceptado tras revisión</li>
+<li class="fragment">Aceptado tras revisión por pares</li>
 <li class="fragment">Sin formato final de la revista</li>
+<li class="fragment">Versión del autor aceptada</li>
 </ul></li>
 <li class="fragment"><strong>Print</strong>
 <ul>
 <li class="fragment">Versión publicada final</li>
+<li class="fragment">Con formato editorial de la revista</li>
 </ul></li>
 </ol>
-</section>
-<section id="publicar-según-la-etapa" class="slide level2">
-<h2>Publicar según la Etapa</h2>
-<h3 id="recomendación-lisa-para-pre-prints">Recomendación LISA para Pre-prints</h3>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><strong>SocArxiv</strong></p>
-<ul>
-<li>Obtén un DOI</li>
-<li>Hace tu documento citable</li>
-<li>No afecta la posterior indexación en revistas</li>
-</ul>
-</div><div class="column" style="width:40%;">
-
+</div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Escritura académica"> <img data-src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="Proceso editorial"></p>
 </div></div>
-</section></section>
-<section>
-<section id="oferta-formativa-de-lisa" class="title-slide slide level1 center" data-background-color="#8E44AD">
-<h1>OFERTA FORMATIVA DE LISA</h1>
-
+<p>:::</p>
 </section>
-<section id="los-4-componentes-de-lisa" class="slide level2">
-<h2>Los 4 Componentes de LISA</h2>
-<ol type="1">
-<li class="fragment"><strong>Diseño Transparente</strong> - con preregistros</li>
-<li class="fragment"><strong>Datos Abiertos</strong> - con protocolos de documentación</li>
-<li class="fragment"><strong>Análisis Reproducibles</strong> - estructura, código, documentos dinámicos y control de versiones</li>
-<li class="fragment"><strong>Publicaciones Libres</strong> - orientación sobre Open Access</li>
-</ol>
-</section>
-<section id="recursos-disponibles" class="slide level2">
-<h2>Recursos Disponibles</h2>
-<p>Todo esto acompañado de:</p>
+<section id="publicar-según-la-etapa" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
+<h2>Publicar según la Etapa</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<span class="kicker">Recomendación LISA para Pre-prints</span>
+<div class="panel">
+<p><strong>SocArxiv</strong> es la mejor opción para ciencias sociales:</p>
 <ul>
-<li class="fragment"><strong>Tutoriales</strong> paso a paso</li>
-<li class="fragment"><strong>Blogs</strong> explicativos</li>
-<li class="fragment"><strong>Videos</strong> didácticos</li>
-<li class="fragment"><strong>Talleres</strong> como el de hoy</li>
+<li>
+Obtén un <strong>DOI</strong> (identificador persistente)
+</li>
+<li>
+Hace tu documento <strong>citable</strong> inmediatamente
+</li>
+<li>
+<strong>No afecta</strong> la posterior indexación en revistas
+</li>
+<li>
+Aumenta la <strong>visibilidad</strong> de tu trabajo
+</li>
+<li>
+Permite recibir <strong>retroalimentación temprana</strong>
+</li>
 </ul>
-<div class="fragment">
+</div>
+<div class="mt-3">
+<div class="callout callout-none no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><strong>Ventaja:</strong> Tu investigación empieza a generar <em>impacto</em> antes de la publicación formal.</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Repositorios pre-print"> <img data-src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="SocArxiv"></p>
+</div></div>
+<p>:::</p>
+</section>
+<section id="recursos-disponibles" class="slide level2 compact-slide" style="font-size:0.80em; line-height:1.05;">
+<h2>Recursos Disponibles</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<span class="kicker">LISA te acompaña en cada paso</span>
+<div class="panel">
+<p>Todo esto acompañado de <strong>recursos gratuitos y accesibles</strong>:</p>
+<ul>
+<li>
+<strong>Tutoriales</strong> paso a paso para cada herramienta
+</li>
+<li>
+<strong>Blogs</strong> explicativos con ejemplos prácticos
+</li>
+<li>
+<strong>Videos</strong> didácticos en español
+</li>
+<li>
+<strong>Talleres</strong> como el de hoy, diseñados para la comunidad
+</li>
+<li>
+<strong>Protocolos</strong> y plantillas reutilizables
+</li>
+</ul>
 <p>Diseñados específicamente para la <strong>comunidad de ciencias sociales de habla hispana</strong>.</p>
 </div>
+</div><div class="column" style="width:45%;">
+<p><img data-src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" style="width:100.0%" alt="Recursos educativos"> <img data-src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&amp;w=1200&amp;auto=format&amp;fit=crop.png" class="mt-3" style="width:100.0%" alt="Comunidad LISA"></p>
+</div></div>
 </section>
-<section id="visítanos" class="slide level2">
-<h2>¡Visítanos!</h2>
-<h3 id="lisacoes.com"><a href="https://lisacoes.com">lisacoes.com</a></h3>
-<p>Encontrarás:</p>
-<ul>
-<li>Guías paso a paso</li>
-<li>Ejemplos prácticos</li>
-<li>Repositorio de GitHub con materiales</li>
-<li>Comunidad activa</li>
-</ul>
-<div class="fragment">
-<h3 id="lisa-es-más-que-herramientas-técnicas">LISA es más que herramientas técnicas</h3>
-<p>Es una <strong>inciativa comprometida</strong> con hacer la ciencia social más transparente, accesible y robusta.</p>
+<section id="section-1" class="slide level2">
+<h2></h2>
+
+<img data-src="https://lisacoes.com/componentes/e-publish/lisa-publications.gif" style="width:70.0%" alt="LISA publications" class="r-stretch"></section>
+<section id="visítanos-lisacoes.com" class="slide level2" style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;">
+<h2>¡Visítanos <a href="https://lisacoes.com">lisacoes.com</a>!</h2>
+<iframe src="https://lisacoes.netlify.app/" width="2000" height="1000"></iframe>
+
+</section>
+<section id="portadafinal" class="slide level2 title-slide center" data-background-image="imagenes/parallax.jpg" data-background-size="cover" data-background-position="center" data-background-opacity="0.80">
+<h2></h2>
+<div class="cover">
+<p><img src="imagenes/LISA2.png" class="cover-logo" alt="LISA"></p>
+
 </div>
 </section>
-<section id="gracias" class="slide level2" data-background-color="#2C3E50">
-<h2>¡Gracias!</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="contacto">Contacto</h3>
-<p><a href="https://lisacoes.com">lisacoes.com</a></p>
-<p>contacto@lisacoes.com</p>
-<p>GitHub: lisa-coes</p>
-</div><div class="column" style="width:50%;">
-<h3 id="preguntas">Preguntas</h3>
-<p>¿Dudas? ¿Comentarios?</p>
-<p>¡Conversemos!</p>
-</div></div>
-
-</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

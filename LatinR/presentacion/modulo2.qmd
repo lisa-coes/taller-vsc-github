@@ -170,191 +170,361 @@ body-classes: kathy
 
 </style>
 
+::: {style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;"}
 # ANÁLISIS REPRODUCIBLES {background-color="#2C3E50"}
 
-## ¿Qué son los Análisis Reproducibles?
-
-:::: {.columns}
-::: {.column width="50%"}
-**Definición**
-
-Permitir que otros puedan regenerar de manera independiente los resultados usando los materiales originales.
+![](imagenes/reproducible.png){width="70%"}
 :::
 
-::: {.column width="50%"}
-**El Problema**
+## ¿Qué son los Análisis Reproducibles? {.compact-slide style="font-size:0.80em; line-height:1.05;"}
+
+::: columns
+::: {.column width="55%"}
+<span class="kicker">Ciencia verificable y acumulativa</span>
+<div class="panel">
+
+Permitir que otros puedan **regenerar de manera independiente** los resultados usando los materiales originales.
+
+<strong>El Problema:</strong>
 
 ¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales? 
 
-Esto hace **imposible** acceder a los procedimientos que generaron sus resultados.
-:::
-::::
+Esto hace **imposible** acceder a los procedimientos que generaron sus resultados, erosionando la confianza y frenando el avance científico.
 
-## Los 4 Pasos de LISA
+</div>
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop){fig-alt="Análisis de datos reproducibles" width="100%"}
+![](https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop){fig-alt="Código y documentación" width="100%" .mt-3}
+:::
+:::
+:::
+
+## Los 4 Pasos de LISA {.compact-slide style="font-size:0.80em; line-height:1.05;"}
+
+::: columns
+::: {.column width="60%"}
+<span class="kicker">Ruta hacia la reproducibilidad</span>
+<div class="panel">
+
+LISA propone **cuatro pasos fundamentales** para garantizar análisis reproducibles:
 
 ::: {.incremental}
-1. **Estructura del proyecto** - Protocolo IPO
-2. **Prácticas de código** - Estándares mínimos
-3. **Documentos dinámicos** - Quarto y similares
-4. **Control de versiones** - Git y GitHub
+1. **Estructura del proyecto** - Protocolo IPO (Input, Procesamiento, Output)
+2. **Prácticas de código** - Estándares mínimos de legibilidad
+3. **Documentos dinámicos** - Quarto y herramientas similares
+4. **Control de versiones** - Git y GitHub para trazabilidad
 :::
 
-## Paso 1: Estructura del Proyecto {.smaller}
-
-**Protocolo IPO:** Input, Procesamiento y Output
-
-::: {.incremental}
-- **Carpeta raíz**: documentar y orientar
-  - Archivo README que explique la estructura
-  
-- **Datos**: separar originales de procesados
-  - Documentar claramente de dónde provienen
-  - Explicar cómo acceder a ellos
-  
-- **Procesamiento**: scripts organizados
-  
-- **Output**: resultados finales
+</div>
 :::
 
-## Paso 2: Prácticas de Código
-
-Estándares mínimos para facilitar la comprensión:
-
-::: {.incremental}
-- **Comentarios explicativos** - ¿Qué hace este código?
-- **Buena indentación** - Estructura visual clara
-- **Nombres claros de objetos** - `datos_limpios` > `df2`
-- **Organización lógica** - Un flujo que otros puedan seguir
+::: {.column width="40%"}
+![](https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1200&auto=format&fit=crop){fig-alt="Estructura y organización" width="100%"}
+![](https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop){fig-alt="Código limpio y documentado" width="100%" .mt-3}
+:::
+:::
 :::
 
-## Paso 3: Documentos Dinámicos
+## Paso 1: Estructura del Proyecto {.compact-slide style="font-size:0.80em; line-height:1.05;"}
 
-### Herramientas como Quarto
+::: columns
+::: {.column width="55%"}
+<span class="kicker">Protocolo IPO: Input, Procesamiento y Output</span>
+<div class="panel">
 
-Lo mejor de dos mundos:
+Una **estructura clara** facilita la navegación y comprensión del proyecto:
 
-:::: {.columns}
-::: {.column width="50%"}
-**Texto plano**
+<ul>
+  <li><strong>Carpeta raíz</strong>: documentar y orientar
+    <ul><li>Archivo README que explique la estructura</li></ul>
+  </li>
+  <li><strong>Datos (Input)</strong>: separar originales de procesados
+    <ul>
+      <li>Documentar claramente de dónde provienen</li>
+      <li>Explicar cómo acceder a ellos</li>
+    </ul>
+  </li>
+  <li><strong>Procesamiento</strong>: scripts organizados secuencialmente</li>
+  <li><strong>Output</strong>: resultados finales (tablas, gráficos, reportes)</li>
+</ul>
 
-Independiente de software comercial
+</div>
 :::
 
-::: {.column width="50%"}
-**Código integrado**
-
-Todo se genera en el mismo documento
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1544396821-4dd40b938ad3?q=80&w=1200&auto=format&fit=crop){fig-alt="Organización de archivos" width="100%"}
+![](https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1200&auto=format&fit=crop){fig-alt="Estructura de carpetas" width="100%" .mt-3}
 :::
-::::
-
-::: {.fragment}
-**Ventaja clave:** No necesitamos importar tablas o gráficos externos; todo es autocontenido.
+:::
 :::
 
-## Paso 4: Control de Versiones
+## Paso 2: Prácticas de Código {.compact-slide style="font-size:0.80em; line-height:1.05;"}
 
-### Git y GitHub
+::: columns
+::: {.column width="55%"}
+<span class="kicker">Estándares mínimos de legibilidad</span>
+<div class="panel">
 
-::: {.incremental}
-- **Git** registra:
-  - ¿**Qué** cambió?
-  - ¿**Quién** lo cambió?
-  - ¿**Cuándo** se cambió?
-  
-- **GitHub** permite:
-  - Hospedar proyectos públicamente
-  - Colaboración en equipo
-  - Fundamental para grandes equipos
+Un código **legible y bien estructurado** facilita la comprensión y reduce errores:
+
+<ul>
+  <li><strong>Comentarios explicativos</strong>: ¿Qué hace este código y por qué?</li>
+  <li><strong>Buena indentación</strong>: Estructura visual que refleja la lógica</li>
+  <li><strong>Nombres claros de objetos</strong>: <code>datos_limpios</code> > <code>df2</code></li>
+  <li><strong>Organización lógica</strong>: Un flujo que otros puedan seguir fácilmente</li>
+</ul>
+
+</div>
+
+<div class="callout mt-3">
+<strong>Idea fuerza:</strong> Escribimos código para <em>humanos</em> que lo leerán después, no solo para máquinas.
+</div>
 :::
 
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop){fig-alt="Código limpio" width="100%"}
+![](https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop){fig-alt="Mejores prácticas" width="100%" .mt-3}
+:::
+:::
+:::
+
+## Paso 3: Documentos Dinámicos {.compact-slide style="font-size:0.80em; line-height:1.05;"}
+
+::: columns
+::: {.column width="55%"}
+<span class="kicker">Herramientas como Quarto</span>
+<div class="panel">
+
+Los **documentos dinámicos** combinan lo mejor de dos mundos:
+
+<ul>
+  <li><strong>Texto plano</strong>: Independiente de software comercial, versionable y accesible</li>
+  <li><strong>Código integrado</strong>: Todo se genera en el mismo documento (análisis, tablas, gráficos)</li>
+</ul>
+
+<strong>Ventaja clave:</strong> No necesitamos importar tablas o gráficos externos; todo es **autocontenido y reproducible**.
+
+</div>
+
+<div class="callout mt-3">
+<strong>Quarto</strong> permite publicar en múltiples formatos: HTML, PDF, Word, presentaciones y más.
+</div>
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop){fig-alt="Documentos dinámicos" width="100%"}
+![](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop){fig-alt="Código y narrativa" width="100%" .mt-3}
+:::
+:::
+:::
+
+## Paso 4: Control de Versiones {.compact-slide style="font-size:0.80em; line-height:1.05;"}
+
+::: columns
+::: {.column width="55%"}
+<span class="kicker">Git y GitHub: trazabilidad completa</span>
+<div class="panel">
+
+El **control de versiones** es esencial para la reproducibilidad:
+
+<strong>Git registra:</strong>
+<ul>
+  <li>¿<strong>Qué</strong> cambió?</li>
+  <li>¿<strong>Quién</strong> lo cambió?</li>
+  <li>¿<strong>Cuándo</strong> se cambió?</li>
+  <li>¿<strong>Por qué</strong> se cambió? (mensajes de commit)</li>
+</ul>
+
+<strong>GitHub permite:</strong>
+<ul>
+  <li>Hospedar proyectos <strong>públicamente</strong></li>
+  <li>Colaboración en equipo con control de cambios</li>
+  <li>Fundamental para proyectos grandes y colaborativos</li>
+</ul>
+
+</div>
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1556075798-4825dfaaf498?q=80&w=1200&auto=format&fit=crop){fig-alt="Control de versiones" width="100%"}
+![](https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop){fig-alt="Colaboración en equipo" width="100%" .mt-3}
+:::
+:::
+
+##
+![](https://lisacoes.com/componentes/c-code/lisa-code.gif){fig-alt="LISA reproducible analysis" width="70%"}
+
+::: {style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;"}
 # PUBLICACIONES LIBRES {background-color="#16A085"}
 
-## ¿Qué son las Publicaciones Libres?
-
-**Dar acceso libre a los resultados de la investigación**
-
-::: {.fragment}
-### El Problema
-
-La publicación científica es clave para dar a conocer resultados, pero a menudo encontramos **barreras de acceso al conocimiento**.
+![](imagenes/openaccess.png){width="70%"}
 :::
 
-::: {.fragment}
-### La Solución
+## ¿Qué son las Publicaciones Libres? {.compact-slide style="font-size:0.80em; line-height:1.05;"}
 
-El movimiento **Open Access** busca promover el acceso libre a la producción científica sin restricciones de copyright.
+::: columns
+::: {.column width="55%"}
+<span class="kicker">Acceso libre al conocimiento científico</span>
+<div class="panel">
+
+**Dar acceso libre** a los resultados de la investigación sin barreras económicas ni legales.
+
+<strong>El Problema:</strong>
+
+La publicación científica es clave para dar a conocer resultados, pero a menudo encontramos **barreras de acceso al conocimiento** que limitan el impacto y la equidad.
+
+<strong>La Solución:</strong>
+
+El movimiento **Open Access** busca promover el acceso libre a la producción científica sin restricciones de copyright, democratizando el conocimiento.
+
+</div>
 :::
 
-## Las 5 Rutas del Open Access {.smaller}
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=1200&auto=format&fit=crop){fig-alt="Acceso abierto" width="100%"}
+![](https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop){fig-alt="Conocimiento libre" width="100%" .mt-3}
+:::
+:::
+:::
+
+## Las 5 Rutas del Open Access {.compact-slide style="font-size:0.75em; line-height:1.05;"}
+
+::: columns
+::: {.column width="60%"}
+<span class="kicker">Diferentes caminos hacia el acceso abierto</span>
+<div class="panel">
+
+Existen **múltiples rutas** para publicar en Open Access:
 
 ::: {.incremental}
-1. **Dorada** - Publicación gratuita para el lector
-2. **Verde** - Auto-archivo en repositorios
-3. **Híbrida** - Combina acceso libre y restringido
-4. **Diamante** - Completamente libre y gratuita
-5. **Bronce** - Acceso sin licencias claras
+1. **Dorada** - Publicación gratuita para el lector (la revista cubre costos)
+2. **Verde** - Auto-archivo en repositorios institucionales o temáticos
+3. **Híbrida** - Combina artículos de acceso libre y restringido en la misma revista
+4. **Diamante** - Completamente libre y gratuita (sin costo para autor ni lector)
+5. **Bronce** - Acceso libre pero sin licencias claras de reutilización
 :::
 
-::: {.fragment}
-**Importante:** Conocer la política OA de la revista donde queremos publicar
+</div>
+
+<div class="callout mt-3">
+<strong>Importante:</strong> Conocer la política OA de la revista donde queremos publicar <em>antes</em> de enviar el manuscrito.
+</div>
 :::
 
-## Etapas del Artículo
+::: {.column width="40%"}
+![](https://images.unsplash.com/photo-1513001900722-370f803f498d?q=80&w=1200&auto=format&fit=crop){fig-alt="Rutas Open Access" width="100%"}
+![](https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=1200&auto=format&fit=crop){fig-alt="Publicación científica" width="100%" .mt-3}
+:::
+:::
+:::
+
+## Etapas del Artículo {.compact-slide style="font-size:0.80em; line-height:1.05;"}
+
+::: columns
+::: {.column width="55%"}
+<span class="kicker">Del borrador a la publicación final</span>
+<div class="panel">
+
+Un artículo científico pasa por **tres etapas principales**:
 
 ::: {.incremental}
 1. **Pre-print** 
    - Borrador antes de revisión por pares
+   - Puede compartirse en repositorios (ej: SocArxiv)
    
 2. **Post-print** 
-   - Aceptado tras revisión
+   - Aceptado tras revisión por pares
    - Sin formato final de la revista
+   - Versión del autor aceptada
    
 3. **Print** 
    - Versión publicada final
+   - Con formato editorial de la revista
 :::
 
-## Publicar según la Etapa
-
-### Recomendación LISA para Pre-prints
-
-:::: {.columns}
-::: {.column width="60%"}
-**SocArxiv**
-
-- Obtén un DOI
-- Hace tu documento citable
-- No afecta la posterior indexación en revistas
+</div>
 :::
 
-::: {.column width="40%"}
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop){fig-alt="Escritura académica" width="100%"}
+![](https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop){fig-alt="Proceso editorial" width="100%" .mt-3}
 :::
-::::
-
-
-## Recursos Disponibles
-
-Todo esto acompañado de:
-
-::: {.incremental}
-- **Tutoriales** paso a paso
-- **Blogs** explicativos
-- **Videos** didácticos
-- **Talleres** como el de hoy
+:::
 :::
 
-::: {.fragment}
+## Publicar según la Etapa {.compact-slide style="font-size:0.80em; line-height:1.05;"}
+
+::: columns
+::: {.column width="55%"}
+<span class="kicker">Recomendación LISA para Pre-prints</span>
+<div class="panel">
+
+**SocArxiv** es la mejor opción para ciencias sociales:
+
+<ul>
+  <li>Obtén un <strong>DOI</strong> (identificador persistente)</li>
+  <li>Hace tu documento <strong>citable</strong> inmediatamente</li>
+  <li><strong>No afecta</strong> la posterior indexación en revistas</li>
+  <li>Aumenta la <strong>visibilidad</strong> de tu trabajo</li>
+  <li>Permite recibir <strong>retroalimentación temprana</strong></li>
+</ul>
+
+</div>
+
+<div class="callout mt-3">
+<strong>Ventaja:</strong> Tu investigación empieza a generar <em>impacto</em> antes de la publicación formal.
+</div>
+:::
+
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop){fig-alt="Repositorios pre-print" width="100%"}
+![](https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop){fig-alt="SocArxiv" width="100%" .mt-3}
+:::
+:::
+:::
+
+## Recursos Disponibles {.compact-slide style="font-size:0.80em; line-height:1.05;"}
+
+::: columns
+::: {.column width="55%"}
+<span class="kicker">LISA te acompaña en cada paso</span>
+<div class="panel">
+
+Todo esto acompañado de **recursos gratuitos y accesibles**:
+
+<ul>
+  <li><strong>Tutoriales</strong> paso a paso para cada herramienta</li>
+  <li><strong>Blogs</strong> explicativos con ejemplos prácticos</li>
+  <li><strong>Videos</strong> didácticos en español</li>
+  <li><strong>Talleres</strong> como el de hoy, diseñados para la comunidad</li>
+  <li><strong>Protocolos</strong> y plantillas reutilizables</li>
+</ul>
+
 Diseñados específicamente para la **comunidad de ciencias sociales de habla hispana**.
+
+</div>
 :::
 
+::: {.column width="45%"}
+![](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop){fig-alt="Recursos educativos" width="100%"}
+![](https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop){fig-alt="Comunidad LISA" width="100%" .mt-3}
+:::
+:::
 
+##
+![](https://lisacoes.com/componentes/e-publish/lisa-publications.gif){fig-alt="LISA publications" width="70%"}
 
+::: {style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;"}
 ## ¡Visítanos [lisacoes.com](https://lisacoes.com)!
-
 
 ```{=html}
 <iframe src="https://lisacoes.netlify.app/" width="2000" height="1000"></iframe>
 
 ```
+:::
+
 ## {.title-slide #portadafinal data-background-image="imagenes/parallax.jpg" data-background-size="cover" data-background-position="center" data-background-opacity="0.80"}
 
 <div class="cover">
