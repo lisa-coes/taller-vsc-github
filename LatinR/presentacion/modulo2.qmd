@@ -229,36 +229,7 @@ LISA propone **cuatro pasos fundamentales** para garantizar análisis reproducib
 
 ## Paso 1: Estructura del Proyecto {.compact-slide style="font-size:0.80em; line-height:1.05;"}
 
-::: columns
-::: {.column width="55%"}
-<span class="kicker">Protocolo IPO: Input, Procesamiento y Output</span>
-<div class="panel">
-
-Una **estructura clara** facilita la navegación y comprensión del proyecto:
-
-<ul>
-  <li><strong>Carpeta raíz</strong>: documentar y orientar
-    <ul><li>Archivo README que explique la estructura</li></ul>
-  </li>
-  <li><strong>Datos (Input)</strong>: separar originales de procesados
-    <ul>
-      <li>Documentar claramente de dónde provienen</li>
-      <li>Explicar cómo acceder a ellos</li>
-    </ul>
-  </li>
-  <li><strong>Procesamiento</strong>: scripts organizados secuencialmente</li>
-  <li><strong>Output</strong>: resultados finales (tablas, gráficos, reportes)</li>
-</ul>
-
-</div>
-:::
-
-::: {.column width="45%"}
-![](https://images.unsplash.com/photo-1544396821-4dd40b938ad3?q=80&w=1200&auto=format&fit=crop){fig-alt="Organización de archivos" width="100%"}
-![](https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1200&auto=format&fit=crop){fig-alt="Estructura de carpetas" width="100%" .mt-3}
-:::
-:::
-:::
+![](images/ipofolder.png)
 
 ## Paso 2: Prácticas de Código {.compact-slide style="font-size:0.80em; line-height:1.05;"}
 
@@ -285,7 +256,7 @@ Un código **legible y bien estructurado** facilita la comprensión y reduce err
 
 ::: {.column width="45%"}
 ![](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop){fig-alt="Código limpio" width="100%"}
-![](https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop){fig-alt="Mejores prácticas" width="100%" .mt-3}
+![](https://code.visualstudio.com/assets/docs/languages/r/overview.png){fig-alt="Mejores prácticas" width="100%" .mt-3}
 :::
 :::
 :::
@@ -314,8 +285,8 @@ Los **documentos dinámicos** combinan lo mejor de dos mundos:
 :::
 
 ::: {.column width="45%"}
-![](https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop){fig-alt="Documentos dinámicos" width="100%"}
-![](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop){fig-alt="Código y narrativa" width="100%" .mt-3}
+![](https://positron.posit.co/images/quarto-hello-python.png){fig-alt="Documentos dinámicos" width="100%"}
+![](https://www.jumpingrivers.com/blog/quarto-rmarkdown-comparison/featured.png){fig-alt="Código y narrativa" width="100%" .mt-3}
 :::
 :::
 :::
@@ -377,11 +348,13 @@ Diseñados específicamente para la **comunidad de ciencias sociales de habla hi
 :::
 
 ::: {.column width="45%"}
-![](https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop){fig-alt="Recursos educativos" width="100%"}
-![](https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop){fig-alt="Comunidad LISA" width="100%" .mt-3}
+![](imagenes/of1.png){fig-alt="R y Quarto" width="100%"}
+![](imagenes/of2.png){fig-alt="Repositorio y control de versiones" width="100%"}
 :::
 :::
 :::
+
+
 
 ::: {style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; text-align:center;"}
 ## ¡Visítanos [lisacoes.com](https://lisacoes.com)!
