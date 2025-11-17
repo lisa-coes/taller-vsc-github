@@ -7,3 +7,5 @@ Taller:  Flujo de investigación abierto y reproducible utilizando VS code y Git
 - Taller CIAE: [https://lisa-coes.github.io/taller-vsc-github/taller-ciae/taller-ciae2025.html](https://lisa-coes.github.io/taller-vsc-github/taller-ciae/taller-ciae2025.html)
 
 - Documento Prueba: [https://lisa-coes.github.io/taller-vsc-github/taller-ciae/quarto_tipo.html](https://lisa-coes.github.io/taller-vsc-github/taller-ciae/quarto_tipo.html)
+
+- Presentación LISA Latinr: [https://lisa-coes.github.io/taller-vsc-github/LatinR/presentacion/LatinR.html](https://lisa-coes.github.io/taller-vsc-github/LatinR/presentacion/LatinR.html) 
